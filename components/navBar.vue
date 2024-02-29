@@ -14,6 +14,8 @@
 
         <NuxtLink to="/projects" class="hidden sm:block"> Projects </NuxtLink>
 
+        <NuxtLink to="/blog" class="hidden sm:block"> Blog </NuxtLink>
+
         <NuxtLink to="" class="block sm:hidden" @click="toggleDropdown"> <LucideMenu /> </NuxtLink>
 
     </div>
@@ -37,6 +39,8 @@
             <NuxtLink to="/" @click="toggleDropdown" class="text-center block bg-[color:var(--brand-background)] w-full p-4 rounded-2xl"> Home </NuxtLink>
 
             <NuxtLink to="/projects" @click="toggleDropdown" class="text-center block bg-[color:var(--brand-background)] w-full p-4 rounded-2xl"> Projects </NuxtLink>
+
+            <NuxtLink to="/blog" @click="toggleDropdown" class="text-center block bg-[color:var(--brand-background)] w-full p-4 rounded-2xl"> Blog </NuxtLink>
 
     </div>
 
