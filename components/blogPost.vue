@@ -2,7 +2,7 @@
 
     <div v-if="hidden === 'false' || hidden === undefined" class="flex flex-col lg:flex-row gap-4 bg-[#041d30] p-6 rounded-[3rem] justify-between">
 
-        <div class="flex flex-col gap-2">
+        <div class="sm:justify-center flex flex-col gap-2">
 
         <NuxtLink :to="to" class="underline text-4xl font-bold"> {{ title }} </NuxtLink>
 
@@ -22,7 +22,7 @@
 
         <span class=""> {{ description }} </span>
 
-        <span> {{ hidden }} </span>
+        <!-- <span> {{ hidden }} </span> -->
 
         <ProjectBadge v-if="badge"> {{ badge.label }} </ProjectBadge>
 

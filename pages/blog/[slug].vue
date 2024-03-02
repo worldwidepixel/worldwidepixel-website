@@ -78,6 +78,12 @@ code {
       max-width: 100% !important;
       border-radius: 1rem !important;
     }
+    h1 {
+      color: var(--big-text-colour);
+    }
+    h2 {
+      color: var(--big-text-colour);
+    }
   }
 }
 
