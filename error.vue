@@ -24,11 +24,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <a href="/"> <user> Home <LucideBook /> </user> </a>
+        <a href="/"> <user> Home <LucideHome /> </user> </a>
 
-        <a href="/projects"> <user> Projects <LucideGithub /> </user> </a>
+        <a href="/projects"> <user> Projects <LucideFlaskConical /> </user> </a>
 
-        <a href="/blog"> <user> Blog <LucideGamepad2 /> </user> </a>
+        <a href="/blog"> <user> Blog <LucideBook /> </user> </a>
 
     </div>
 

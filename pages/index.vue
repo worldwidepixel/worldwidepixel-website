@@ -1,3 +1,4 @@
+<style>.a { align-items: center;}</style>
 <template>
 
     <span class="text-[4rem]">
@@ -36,9 +37,15 @@
 </template>
 
 <script setup lang="ts">
+
 useSeoMeta({
   title: 'worldwidepixel - home',
   description: "I make things. On the internet.",
   ogImage: "~/assets/img/icon512.png",
+});
+
+definePageMeta({
+  layout: 'home'
 })
+
 </script>
