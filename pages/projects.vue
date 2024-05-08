@@ -10,6 +10,30 @@
 
         <ProjectTitleBar>
 
+            <ProjectTitle> Badger </ProjectTitle>
+
+            <img class="h-12 bg-white rounded-xl p-1" src="https://badger.worldwidepixel.ca/img/badger.png">
+
+        </ProjectTitleBar>
+
+        <ProjectParagraph>
+
+            A badge generator for the web.
+
+        </ProjectParagraph>
+
+    </projectContainer>
+
+    <div class="flex flex-row gap-4 flex-wrap">
+
+        <NuxtLink to="https://badger.worldwidepixel.ca"> <user> Website <LucideBadge /> </user> </NuxtLink>
+
+    </div>
+
+    <projectContainer>
+
+        <ProjectTitleBar>
+
             <ProjectTitle> Serv-ify </ProjectTitle>
 
             <img class="h-12 bg-white rounded-xl p-1" src="https://projects.worldwidepixel.ca/servify512.png">
