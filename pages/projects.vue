@@ -50,7 +50,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://projects.worldwidepixel.ca/servify"> <user> Website <LucideServer /> </user> </NuxtLink>
+        <NuxtLink to="https://projects.worldwidepixel.ca/servify">
+            <user> Website
+                <LucideServer />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -74,7 +78,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://projects.worldwidepixel.ca/nameify"> <user> Website <LucideBookA /> </user> </NuxtLink>
+        <NuxtLink to="https://projects.worldwidepixel.ca/nameify">
+            <user> Website
+                <LucideBookA />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -98,7 +106,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://imateapot.xyz/"> <user> Website <LucideCoffee /> </user> </NuxtLink>
+        <NuxtLink to="https://imateapot.xyz/">
+            <user> Website
+                <LucideCoffee />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -107,7 +119,8 @@
 
         <ProjectTitleBar>
 
-            <ProjectTitle> Loop <ProjectBadge>ORG</ProjectBadge> </ProjectTitle>
+            <ProjectTitle> Loop <ProjectBadge>ORG</ProjectBadge>
+            </ProjectTitle>
 
             <img class="h-12 bg-white rounded-xl p-1" src="~/assets/img/icons/loop.png">
 
@@ -123,9 +136,17 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://loopmc.org"> <user> Website <LucideInfinity/> </user> </NuxtLink>
+        <NuxtLink to="https://loopmc.org">
+            <user> Website
+                <LucideInfinity />
+            </user>
+        </NuxtLink>
 
-        <NuxtLink to="https://modrinth.com/organization/loop"> <user> Modrinth <LucideBox /> </user> </NuxtLink>
+        <NuxtLink to="https://modrinth.com/organization/loop">
+            <user> Modrinth
+                <LucideBox />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -133,7 +154,8 @@
 
         <ProjectTitleBar>
 
-            <ProjectTitle> nineMinecraft <ProjectBadge>ORG</ProjectBadge> </ProjectTitle>
+            <ProjectTitle> nineMinecraft <ProjectBadge>ORG</ProjectBadge>
+            </ProjectTitle>
 
             <img class="h-12 bg-white rounded-xl p-1" src="https://nineminecraft.com/img/9icon.png">
 
@@ -149,9 +171,52 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://nineminecraft.com"> <user> Website <LucideSiren /> </user> </NuxtLink>
+        <NuxtLink to="https://nineminecraft.com">
+            <user> Website
+                <LucideSiren />
+            </user>
+        </NuxtLink>
 
-        <NuxtLink to="https://dev.nineminecraft.com"> <user> Knossos Fork <LucideBox /> </user> </NuxtLink>
+        <NuxtLink to="https://dev.nineminecraft.com">
+            <user> Knossos Fork
+                <LucideBox />
+            </user>
+        </NuxtLink>
+
+    </div>
+
+    <projectContainer>
+
+        <ProjectTitleBar>
+
+            <ProjectTitle> Hollow </ProjectTitle>
+
+            <img class="h-12 bg-white rounded-xl p-1" src="https://raw.githubusercontent.com/CallMeEchoCodes/Hollow/main/src/main/resources/assets/hollow/icon.png">
+
+        </ProjectTitleBar>
+
+        <ProjectParagraph>
+
+            A mod about hollow logs and hollow promises.
+            Created with CallMeEcho.
+
+        </ProjectParagraph>
+
+    </projectContainer>
+
+    <div class="flex flex-row gap-4 flex-wrap">
+
+        <NuxtLink to="https://github.com/CallMeEchoCodes/Hollow">
+            <user> Github
+                <LucideGithub />
+            </user>
+        </NuxtLink>
+
+        <NuxtLink to="https://modrinth.com/mod/hollow">
+            <user> Modrinth
+                <LucideBox />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -175,7 +240,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://facts.worldwidepixel.ca/"> <user> Website <LucideMegaphone/> </user> </NuxtLink>
+        <NuxtLink to="https://facts.worldwidepixel.ca/">
+            <user> Website
+                <LucideMegaphone />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -185,7 +254,8 @@
 
             <ProjectTitle> blueRinth </ProjectTitle>
 
-            <img class="h-12 bg-white rounded-xl p-1" src="https://raw.githubusercontent.com/worldwidepixel/blueRinth/main/img/icon.png">
+            <img class="h-12 bg-white rounded-xl p-1"
+                src="https://raw.githubusercontent.com/worldwidepixel/blueRinth/main/img/icon.png">
 
         </ProjectTitleBar>
 
@@ -199,7 +269,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://addons.mozilla.org/firefox/addon/bluerinth/"> <user> Mozilla Addons <LucideFlame /> </user> </NuxtLink>
+        <NuxtLink to="https://addons.mozilla.org/firefox/addon/bluerinth/">
+            <user> Mozilla Addons
+                <LucideFlame />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -209,7 +283,8 @@
 
             <ProjectTitle> modbar </ProjectTitle>
 
-            <img class="h-12 bg-white rounded-xl p-1" src="https://raw.githubusercontent.com/worldwidepixel/modBar/main/img/icon256.png">
+            <img class="h-12 bg-white rounded-xl p-1"
+                src="https://raw.githubusercontent.com/worldwidepixel/modBar/main/img/icon256.png">
 
         </ProjectTitleBar>
 
@@ -223,7 +298,11 @@
 
     <div class="flex flex-row gap-4 flex-wrap">
 
-        <NuxtLink to="https://addons.mozilla.org/firefox/addon/themodbar/"> <user> Mozilla Addons <LucideFlame /> </user> </NuxtLink>
+        <NuxtLink to="https://addons.mozilla.org/firefox/addon/themodbar/">
+            <user> Mozilla Addons
+                <LucideFlame />
+            </user>
+        </NuxtLink>
 
     </div>
 
@@ -232,8 +311,8 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'worldwidepixel - projects',
-  description: "I make things. On the internet.",
-  ogImage: "~/assets/img/icon512.png",
+    title: 'worldwidepixel - projects',
+    description: "I make things. On the internet.",
+    ogImage: "~/assets/img/icon512.png",
 })
 </script>
