@@ -1,55 +1,55 @@
 <template>
+  <canvas
+    class="brightness-50 saturate-200"
+    id="gradient-canvas"
+    data-transition-in
+  />
 
-  <canvas class="brightness-50 saturate-200" id="gradient-canvas" data-transition-in />
-
-    <div class="flex justify-center flex-col p-6 gap-8">
-
+  <div class="flex flex-col h-dvh">
+    <nav class="p-6">
       <navBar />
-
+    </nav>
+    <main class="flex justify-center flex-col p-6 gap-8 flex-auto">
       <HomeContainer class="grain p-[5%] gap-8 flex-col flex">
         <slot />
-
       </HomeContainer>
-
-    </div>
+    </main>
 
     <pageFooter />
-
+  </div>
 </template>
 
 <script setup lang="ts">
-
-import { Gradient } from '../public/scripts/Gradient.js';
-import '~/types/gradient.d.ts';
-
+import { Gradient } from "../public/scripts/Gradient.js";
+import "~/types/gradient.d.ts";
 
 const gradient = new Gradient();
 
 onMounted(() => {
   function connectGradient() {
     try {
-      gradient.initGradient('#gradient-canvas');
+      gradient.initGradient("#gradient-canvas");
     } catch (error) {
-      console.error('An error occurred while initializing Gradient:', error);
+      console.error("An error occurred while initializing Gradient:", error);
     }
   }
 
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
     connectGradient();
   } else {
-    document.addEventListener('DOMContentLoaded', connectGradient);
+    document.addEventListener("DOMContentLoaded", connectGradient);
   }
 });
-
-
 </script>
 
 <style>
-
 @import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,500,500i,700,700i|inter:100,200,300,400,500,600,700,800,900);
 
 :root {
-  font-family: 'DM Sans', Inter, Helvetica, sans-serif;
+  font-family: "DM Sans", Inter, Helvetica, sans-serif;
   --brand-colour: #041d30;
   --brand-bright: #28cbd4;
   --brand-scrollbar: #28cbd4;
@@ -60,10 +60,10 @@ onMounted(() => {
 }
 
 .brand-gradient {
-    background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+  width: 1rem;
 }
 
 * {
@@ -89,7 +89,7 @@ body {
   --gradient-color-1: #8e80ff;
   --gradient-color-2: #6ec3f4;
   --gradient-color-3: #fc38ff;
-  --gradient-color-4: #b9beff;  
+  --gradient-color-4: #b9beff;
 }
 
 /*.grain {
@@ -97,5 +97,4 @@ body {
   background-size: 200px 200px;
   backdrop-filter: contrast(1000) brightness(100) opacity(50%) blur(2px);
 } */
-
 </style>
