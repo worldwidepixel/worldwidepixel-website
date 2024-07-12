@@ -7,15 +7,15 @@
 
   <div class="flex flex-col h-dvh">
     <nav class="p-6">
-      <navBar />
+      <NavBar />
     </nav>
-    <main class="flex justify-center flex-col p-6 gap-8 flex-auto">
+    <main class="flex flex-col justify-center p-6 gap-8 flex-auto">
       <HomeContainer class="grain p-[5%] gap-8 flex-col flex">
         <slot />
       </HomeContainer>
     </main>
 
-    <pageFooter />
+    <PageFooter />
   </div>
 </template>
 

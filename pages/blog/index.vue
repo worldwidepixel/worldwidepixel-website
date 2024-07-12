@@ -9,7 +9,7 @@
       My place to write and chat. <logo class="p-1" />
     </span>
 
-    <blogPost
+    <BlogPost
       v-for="(post, index) in posts"
       :key="index"
       :to="post._path"

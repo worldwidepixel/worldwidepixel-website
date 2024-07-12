@@ -1,7 +1,7 @@
 <template>
   <div class="h-dvh flex flex-col">
     <nav class="p-6">
-      <navBar />
+      <NavBar />
     </nav>
     <div class="flex justify-center flex-col p-6 gap-8 flex-auto">
       <div class="m-[5%] gap-8 flex-col flex">
@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <pageFooter />
+    <PageFooter />
   </div>
 </template>
 

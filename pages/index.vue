@@ -27,15 +27,15 @@
 
   <div class="flex flex-row gap-4 flex-wrap">
     <NuxtLink to="https://www.youtube.com/@worldwidepixel">
-      <user> Youtube <LucidePlayCircle /> </user>
+      <User> Youtube <LucidePlayCircle /> </User>
     </NuxtLink>
 
     <NuxtLink to="https://www.github.com/worldwidepixel/">
-      <user> Github <LucideGithub /> </user>
+      <User> Github <LucideGithub /> </User>
     </NuxtLink>
 
     <NuxtLink to="https://www.twitch.tv/worldwidepixel">
-      <user> Twitch <LucideGamepad2 /> </user>
+      <User> Twitch <LucideGamepad2 /> </User>
     </NuxtLink>
 
     <NuxtLink to="https://mastodon.social/@worldwidepixel">
