@@ -1,9 +1,5 @@
 <template>
-
-    <div class="bg-[color:var(--brand-colour)] max-w-7xl w-full p-6 rounded-3xl">
-
-        <slot />
-
-    </div>
-
+  <div class="max-w-full lg:max-w-[50rem]">
+    <slot />
+  </div>
 </template>

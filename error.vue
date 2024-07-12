@@ -1,16 +1,18 @@
 <template>
-
-    <NuxtLayout>
+  <NuxtLayout>
+    <Title>{{ error.statusCode }}</Title>
 
     <span class="text-[8rem] flex flex-col">
-        <span class="font-bold text-[color:var(--big-text-colour)]"> {{ error.statusCode }} </span>
-        <code class="text-[1rem]"> {{ error.url }} </code>
+      <span class="font-bold text-[color:var(--big-text-colour)]">
+        {{ error.statusCode }}
+      </span>
+      <code class="text-[1rem]"> {{ error.url }} </code>
     </span>
 
     <div class="text-2xl">
-
-        <span class="flex flex-row gap-4 items-center"> {{ error.message }} <logo class="p-1" /> </span>
-
+      <span class="flex flex-row gap-4 items-center">
+        {{ error.message }} <logo class="p-1" />
+      </span>
     </div>
 
     <!--<div class="text-2xl">
@@ -20,24 +22,28 @@
 
     </div>-->
 
-    <span class="text-5xl font-bold text-[color:var(--big-text-colour)]"> Other Pages </span>
+    <span class="text-5xl font-bold text-[color:var(--big-text-colour)]">
+      Other Pages
+    </span>
 
     <div class="flex flex-row gap-4 flex-wrap">
+      <a href="/">
+        <user> Home <LucideHome /> </user>
+      </a>
 
-        <a href="/"> <user> Home <LucideHome /> </user> </a>
+      <a href="/projects">
+        <user> Projects <LucideFlaskConical /> </user>
+      </a>
 
-        <a href="/projects"> <user> Projects <LucideFlaskConical /> </user> </a>
-
-        <a href="/blog"> <user> Blog <LucideBook /> </user> </a>
-
+      <a href="/blog">
+        <user> Blog <LucideBook /> </user>
+      </a>
     </div>
-
-</NuxtLayout>
-
+  </NuxtLayout>
 </template>
 
 <script lang="ts">
 export default {
-    props: ['error'],
+  props: ["error"],
 };
 </script>

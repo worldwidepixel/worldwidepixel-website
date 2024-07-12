@@ -15,11 +15,12 @@ badge:
 hidden: "false"
 ---
 
-_A mediocre blogpost from February. Read with embarrasment._
+_A mediocre blogpost from March. Read with embarrasment._
 
 # What happens when you download a mod from a suspicious reupload?
 
 ![A russian mod reuploader.](/img/blog/reposts/minecraft-inside.png)<br>
+<sup>_The home page of MinecraftInside._</sup>
 
 ### When I started contributing to the mod Hollow, I never knew that I would be investigating malware only a week later.
 

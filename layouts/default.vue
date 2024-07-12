@@ -23,7 +23,7 @@
   --brand-scrollbar: #28cbd4;
   --brand-background: #16181c;
   --brand-navbar: #262a31bf;
-  --text-colour: rgb(214, 214, 214);
+  --text-colour: rgb(225, 225, 225);
   --big-text-colour: white;
 }
 
