@@ -242,5 +242,26 @@ const projects = {
       text: "undefined",
     },
   },
+  spirit: {
+    name: "Spirit Studios",
+    desc: "Redefining.",
+    icon: "https://avatars.githubusercontent.com/u/175811374?s=200&v=4",
+    links: {
+      github: {
+        name: "Github",
+        icon: "github",
+        to: "https://github.com/SpiritGameStudios",
+      },
+      modrinth: {
+        name: "Modrinth",
+        icon: "box",
+        to: "https://modrinth.com/organization/spirit",
+      },
+    },
+    badge: {
+      show: true,
+      text: "ORG",
+    },
+  },
 };
 </script>
