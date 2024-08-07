@@ -11,4 +11,7 @@ export interface BlogPost extends ParsedContent {
     description?: string;
     avatar?: Avatar;
   } & Link)[];
+  body: String;
+  hidden: string;
+  _path: string;
 }

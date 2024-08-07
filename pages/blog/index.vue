@@ -32,7 +32,6 @@
 
 <script setup lang="ts">
 import type { BlogPost } from "~/types";
-import { defineProps } from "vue";
 
 const { data: page } = await useAsyncData("blog", () =>
   queryContent("/blog").findOne()

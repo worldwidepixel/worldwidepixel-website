@@ -6,7 +6,7 @@
   />
 
   <div class="flex flex-col h-dvh">
-    <nav class="p-6">
+    <nav class="p-6 pb-0">
       <NavBar />
     </nav>
     <main class="flex flex-col justify-center p-6 gap-8 flex-auto">

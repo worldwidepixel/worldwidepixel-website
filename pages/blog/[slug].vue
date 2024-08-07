@@ -28,14 +28,16 @@ const { data: surround } = await useAsyncData(
 const date = post.value.date;
 const authors = post.value.authors;
 const badge = post.value.badge.label;
-const title = post.value.head?.title || post.value.title;
-const description = post.value.head?.description || post.value.description;
+const title = post.value?.title || post.value.title;
+const description = post.value?.description || post.value.description;
+const heroImage = post.value.image?.src || "";
 
 useSeoMeta({
   title,
   ogTitle: title + " - blog",
   description,
   ogDescription: description,
+  ogImage: heroImage,
 });
 </script>
 
