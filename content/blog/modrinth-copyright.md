@@ -17,6 +17,10 @@ hidden: "false"
 
 _I'm not a lawyer. Claims may be incorrect. Please contact me if you find a mistake._
 
+### Update
+
+Modrinth does not enforce copyright infringement on projects as a cover-all policy, citing the complicated moderation troubles it would bring. This is a valid problem.
+
 # What happens if you resdistribute music on Modrinth without permission?
 
 ![Green Labyrinth with Wrench in centre beside a red circle with a C in it.](/img/blog/mr_copyright/mr-copyright.png)
