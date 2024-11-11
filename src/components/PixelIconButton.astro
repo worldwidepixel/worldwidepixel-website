@@ -1,0 +1,11 @@
+---
+const { text, to, external } = Astro.props;
+---
+
+<a
+	target={external === true ? "_blank" : ""}
+	href={to}
+	class="bg-brand-background-blue flex select-none flex-row items-center gap-4 rounded-2xl p-4 text-2xl font-bold text-brand-text-secondary duration-75 active:scale-95">
+	{text}
+	<slot />
+</a>

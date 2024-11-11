@@ -1,0 +1,52 @@
+---
+import Button from "../components/Button.astro";
+import Default from "../layouts/Default.astro";
+import projects from "../data/projects.json";
+
+function getGradientFromProject(colour: string) {
+	return `background: linear-gradient(135deg, ${colour} 0%, rgba(0,0,0,0) 100%);`;
+}
+---
+
+<Default title="projects">
+	<div class="flex flex-col gap-4 py-16 text-sm">
+		<span class="text-6xl font-bold">My current <span class="brand-gradient">projects</span>.</span>
+		(and orgs)
+	</div>
+	<div class="flex flex-col justify-center gap-4">
+		{
+			projects.map((project: any) => (
+				<div class="flex w-full flex-col">
+					<div
+						class="flex w-full flex-col gap-3 rounded-3xl p-6"
+						style={getGradientFromProject(project.colour)}>
+						<span class="flex flex-row items-center gap-4 text-4xl font-bold">
+							<img class="h-10 w-10 rounded-xl bg-white p-0.5" src={project.icon} />
+							{project.name}
+						</span>
+						<span class="flex flex-col gap-2">
+							{project.description.map((paragraph: any) => (
+								<span>{paragraph}</span>
+							))}
+						</span>
+						<div class="flex flex-row flex-wrap items-center gap-2">
+							{project.links.map((link: any) => (
+								<Button
+									classList={
+										project.colour === "#ffffff"
+											? "subtext_dark"
+											: "" + ` bg-brand-background-secondary`
+									}
+									to={link.to}
+									external={true}
+									showIcon={true}>
+									{link.name}
+								</Button>
+							))}
+						</div>
+					</div>
+				</div>
+			))
+		}
+	</div>
+</Default>

@@ -1,0 +1,19 @@
+---
+import Link from "../components/Link.astro";
+import Default from "../layouts/Default.astro";
+---
+
+<Default>
+	<div class="flex h-full flex-col justify-center gap-2">
+		<div class="flex w-full flex-col gap-4">
+			<span class="text-4xl font-bold"
+				><span class="text-brand-colour">404</span>. Something bad has happened.</span
+			>
+			<span class="flex flex-col gap-2">
+				<span>
+					I'm sure that the content you're looking for can be found on the <Link to="/">home page</Link>.
+				</span>
+			</span>
+		</div>
+	</div>
+</Default>

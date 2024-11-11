@@ -1,30 +1,26 @@
 {
-  "name": "worldwidepixel-website",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/content": "^2.13.2",
-    "nuxt": "^3.12.4",
-    "nuxt-og-image": "3.0.0-rc.38",
-    "postcss-custom-properties": "^14.0.0",
-    "ufo": "^1.5.4",
-    "vue": "^3.4.36",
-    "vue-router": "^4.4.3"
-  },
-  "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "autoprefixer": "^10.4.20",
-    "nuxt-lucide-icons": "^1.0.5",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.7",
-    "ufo": "^1.4.0"
-  }
+	"name": "worldwidepixel-website",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/tailwind": "^5.1.2",
+		"@astropub/md": "^1.0.0",
+		"astro": "^4.16.3",
+		"lucide-astro": "^0.446.0",
+		"tailwindcss": "^3.4.13",
+		"typescript": "^5.6.2"
+	},
+	"devDependencies": {
+		"prettier": "^3.3.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.8"
+	}
 }
