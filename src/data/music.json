@@ -9,6 +9,14 @@
 			{
 				"name": "Bandcamp",
 				"to": "https://worldwidepixel.bandcamp.com/album/joy"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/1aEjkFTr3QRurQHKJv7iE9"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/us/album/joy-ep/1780127966"
 			}
 		]
 	},
