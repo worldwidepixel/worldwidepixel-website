@@ -43,16 +43,16 @@
 }
 
 .md h1 {
-	@apply mb-4 border-b text-3xl font-bold;
+	@apply my-6 text-3xl font-bold;
 }
 .md h2 {
-	@apply my-2 border-b text-2xl font-bold;
+	@apply my-4 text-2xl font-bold;
 }
 .md h3 {
 	@apply mb-4 text-xl font-bold;
 }
 .md img {
-	@apply m-0.5 inline-block w-fit max-w-full;
+	@apply inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg my-2;
 }
 .md p {
 	@apply my-4;

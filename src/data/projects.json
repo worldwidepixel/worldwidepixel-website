@@ -120,22 +120,6 @@
 		]
 	},
 	{
-		"name": "nineMinecraft",
-		"icon": "https://nineminecraft.com/img/9icon.png",
-		"colour": "#041d30",
-		"description": ["A satire 9minecraft clone, and warning site."],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://nineminecraft.com/"
-			},
-			{
-				"name": "Knossos Fork",
-				"to": "https://browse.nineminecraft.com/"
-			}
-		]
-	},
-	{
 		"name": "Serv-ify",
 		"icon": "https://projects.worldwidepixel.ca/servify512.png",
 		"colour": "#041d30",
