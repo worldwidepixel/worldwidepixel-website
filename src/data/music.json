@@ -30,6 +30,14 @@
 			{
 				"name": "Bandcamp",
 				"to": "https://worldwidepixel.bandcamp.com/album/flare"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/1ooh1yiUJ3KCihqnif6qk7"
+			},
+			{
+				"name:" "Apple Music",
+				"to": "https://music.apple.com/album/flare-ep/1780991075"
 			}
 		]
 	},
@@ -43,7 +51,15 @@
 			{
 				"name": "Bandcamp",
 				"to": "https://worldwidepixel.bandcamp.com/album/wildflower"
-			}
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/4M4e76UmfVYmu502ETYlri"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/album/wildflower-ep/1780496177"
+			},
 		]
 	}
 ]
