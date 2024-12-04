@@ -52,7 +52,7 @@
 	@apply mb-4 text-xl font-bold;
 }
 .md img {
-	@apply inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg my-2;
+	@apply my-2 inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg;
 }
 .md p {
 	@apply my-4;
