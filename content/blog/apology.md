@@ -2,7 +2,7 @@
 title: "Spirit Studios' Snapper Chief Vision Officer WorldWidePixel Releases Statement on Clipboard"
 description: "I made a severe and continuous lapse in my judgement, and I don’t expect to be forgiven. I’m simply here to apologize. What we came..."
 image:
-  src: /img/blog/apology/banner.png
+  src: /img/apology/banner.png
 authors:
   - name: worldwidepixel
     avatar:
