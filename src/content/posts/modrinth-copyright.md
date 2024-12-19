@@ -10,7 +10,7 @@ authors:
 date: 2024-08-06
 tags:
     - "discussion"
-hidden: false
+hidden: true
 ---
 
 _I'm not a lawyer. Claims may be incorrect. Please contact me if you find a mistake._

@@ -1,71 +1,86 @@
 [
-    {
-        "title": "Joy",
-        "icon": "/img/music/joy.png",
-        "date": "November 11, 2024",
-        "colour": "#09309d",
-        "description": [
-            "You know what? Why not make something lovely?"
-        ],
-        "links": [
-            {
-                "name": "Bandcamp",
-                "to": "https://worldwidepixel.bandcamp.com/album/joy"
-            },
-            {
-                "name": "Spotify",
-                "to": "https://open.spotify.com/album/1aEjkFTr3QRurQHKJv7iE9"
-            },
-            {
-                "name": "Apple Music",
-                "to": "https://music.apple.com/us/album/joy-ep/1780127966"
-            }
-        ]
-    },
-    {
-        "title": "Flare",
-        "icon": "/img/music/flare.png",
-        "date": "July 1, 2024",
-        "colour": "#fd7369",
-        "description": [
-            "Everything that doesn't 'belong' somewhere. Full of failures, rejects, and firsts."
-        ],
-        "links": [
-            {
-                "name": "Bandcamp",
-                "to": "https://worldwidepixel.bandcamp.com/album/flare"
-            },
-            {
-                "name": "Spotify",
-                "to": "https://open.spotify.com/album/1ooh1yiUJ3KCihqnif6qk7"
-            },
-            {
-                "name": "Apple Music",
-                "to": "https://music.apple.com/album/flare-ep/1780991075"
-            }
-        ]
-    },
-    {
-        "title": "Wildflower",
-        "icon": "/img/music/wildflower.png",
-        "date": "March 26, 2024",
-        "colour": "#a100ff",
-        "description": [
-            "You've got to start somewhere."
-        ],
-        "links": [
-            {
-                "name": "Bandcamp",
-                "to": "https://worldwidepixel.bandcamp.com/album/wildflower"
-            },
-            {
-                "name": "Spotify",
-                "to": "https://open.spotify.com/album/4M4e76UmfVYmu502ETYlri"
-            },
-            {
-                "name": "Apple Music",
-                "to": "https://music.apple.com/album/wildflower-ep/1780496177"
-            }
-        ]
-    }
+	{
+		"title": "ModFest 1​.​21: Time, Technology, & Throwbacks (Original Modpack Soundtrack)",
+		"icon": "/img/music/modfest121.png",
+		"date": "November 28, 2024",
+		"colour": "#dd604a",
+		"description": ["Enjoy the tunes that line the time walls of Stasis! By Nulb, lumiscosity and WorldWidePixel."],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://modfest.bandcamp.com/album/modfest-121-time-technology-throwbacks-original-modpack-soundtrack"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/41JJf6dc5RPNPKHSQE9j1x"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/album/modfest-1-21-time-technology-throwbacks-original-modpack/1782835845"
+			}
+		]
+	},
+	{
+		"title": "Joy",
+		"icon": "/img/music/joy.png",
+		"date": "November 11, 2024",
+		"colour": "#09309d",
+		"description": ["You know what? Why not make something lovely?"],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://worldwidepixel.bandcamp.com/album/joy"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/1aEjkFTr3QRurQHKJv7iE9"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/us/album/joy-ep/1780127966"
+			}
+		]
+	},
+	{
+		"title": "Flare",
+		"icon": "/img/music/flare.png",
+		"date": "July 1, 2024",
+		"colour": "#fd7369",
+		"description": ["Everything that doesn't 'belong' somewhere. Full of failures, rejects, and firsts."],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://worldwidepixel.bandcamp.com/album/flare"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/1ooh1yiUJ3KCihqnif6qk7"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/album/flare-ep/1780991075"
+			}
+		]
+	},
+	{
+		"title": "Wildflower",
+		"icon": "/img/music/wildflower.png",
+		"date": "March 26, 2024",
+		"colour": "#a100ff",
+		"description": ["You've got to start somewhere."],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://worldwidepixel.bandcamp.com/album/wildflower"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/4M4e76UmfVYmu502ETYlri"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/album/wildflower-ep/1780496177"
+			}
+		]
+	}
 ]
