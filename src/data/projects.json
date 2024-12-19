@@ -1,0 +1,150 @@
+[
+	{
+		"name": "Badger",
+		"icon": "https://badger.worldwidepixel.ca/img/badger.png",
+		"colour": "#041d30",
+		"description": ["A badge generator for the web."],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://badger.worldwidepixel.ca/"
+			}
+		]
+	},
+	{
+		"name": "blueRinth",
+		"icon": "https://raw.githubusercontent.com/worldwidepixel/blueRinth/main/img/icon.png",
+		"colour": "#041d30",
+		"description": ["Change the colour of Modrinth."],
+		"links": [
+			{
+				"name": "Mozilla Addons",
+				"to": "https://addons.mozilla.org/firefox/addon/bluerinth/"
+			}
+		]
+	},
+	{
+		"name": "Bombastic",
+		"icon": "https://cdn.modrinth.com/data/4PhSSMsR/ec2f60f2a686e7c83ef5d366f817c8f53c92f087.png",
+		"colour": "#041d30",
+		"description": ["Sending you pipe bombs since 2024."],
+		"links": [
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/mod/bombastic"
+			},
+			{
+				"name": "Github",
+				"to": "https://github.com/callmeechocodes/bombastic"
+			}
+		]
+	},
+	{
+		"name": "Hollow",
+		"icon": "https://raw.githubusercontent.com/CallMeEchoCodes/Hollow/main/src/main/resources/assets/hollow/icon.png",
+		"colour": "#041d30",
+		"description": ["A mod about hollow logs and hollow promises."],
+		"links": [
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/mod/hollow"
+			},
+			{
+				"name": "Github",
+				"to": "https://github.com/CallMeEchoCodes/Hollow"
+			}
+		]
+	},
+	{
+		"name": "imateapot.xyz",
+		"icon": "https://www.imateapot.xyz/favicon.ico",
+		"colour": "#041d30",
+		"description": ["I am a teapot. Are you?"],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://imateapot.xyz/"
+			}
+		]
+	},
+	{
+		"name": "Loop",
+		"icon": "/img/icons/loop.png",
+		"colour": "#041d30",
+		"description": ["An organization dedicated to improving the legacy Minecraft experience."],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://loopmc.org"
+			},
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/organization/loop"
+			}
+		]
+	},
+	{
+		"name": "Minefacts",
+		"icon": "https://facts.worldwidepixel.ca/img/icon.png",
+		"colour": "#041d30",
+		"description": ["One Minecraft fact, every day, for all of 2024."],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://facts.worldwidepixel.ca/"
+			}
+		]
+	},
+	{
+		"name": "modbar",
+		"icon": "https://raw.githubusercontent.com/worldwidepixel/modBar/main/img/icon256.png",
+		"colour": "#041d30",
+		"description": ["The easiest way to find your favourite Modrinth projects."],
+		"links": [
+			{
+				"name": "Mozilla Addons",
+				"to": "https://addons.mozilla.org/firefox/addon/themodbar"
+			}
+		]
+	},
+	{
+		"name": "Name-ify",
+		"icon": "https://projects.worldwidepixel.ca/nameify512.png",
+		"colour": "#041d30",
+		"description": ["A simple Minecraft nickname formatting generator."],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://projects.worldwidepixel.ca/nameify"
+			}
+		]
+	},
+	{
+		"name": "Serv-ify",
+		"icon": "https://projects.worldwidepixel.ca/servify512.png",
+		"colour": "#041d30",
+		"description": ["Find Minecraft server info, relatively easily."],
+		"links": [
+			{
+				"name": "Website",
+				"to": "https://projects.worldwidepixel.ca/servify"
+			}
+		]
+	},
+	{
+		"name": "Spirit Studios",
+		"icon": "https://avatars.githubusercontent.com/u/175811374?s=200&v=4",
+		"colour": "#041d30",
+		"description": ["Redefining."],
+		"links": [
+			{
+				"name": "Github",
+				"to": "https://github.com/SpiritGameStudios"
+			},
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/organization/spirit"
+			}
+		]
+	}
+]

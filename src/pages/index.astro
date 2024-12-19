@@ -1,0 +1,47 @@
+---
+import Default from "../layouts/Default.astro";
+import PixelWordmark from "../components/PixelWordmark.astro";
+import PixelLogo from "../components/PixelLogo.astro";
+import PixelIconButton from "../components/PixelIconButton.astro";
+
+import { Bird, Box, Github, PlayCircle, Twitch } from "lucide-astro";
+---
+
+<script type="module" lang="ts">
+	import { Gradient } from "../Gradient.js";
+
+	const gradient = new Gradient();
+
+	gradient.initGradient("#gradient-canvas");
+</script>
+
+<Default title="home">
+	<div
+		class="flex h-full flex-col justify-center gap-2 rounded-3xl bg-brand-background-transparent shadow backdrop-blur">
+		<div class="flex w-full flex-col gap-6 p-6 sm:p-12">
+			<PixelWordmark />
+			<span class="flex flex-row items-center gap-4 text-2xl text-brand-text-secondary">
+				I make things. On the internet. <PixelLogo className="p-1" />
+			</span>
+			<span class="text-4xl font-bold">Quick Links</span>
+			<div class="flex flex-row flex-wrap gap-4">
+				<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
+					<PlayCircle />
+				</PixelIconButton>
+				<PixelIconButton external={true} to="https://www.github.com/worldwidepixel" text="GitHub">
+					<Github />
+				</PixelIconButton>
+				<PixelIconButton external={true} to="https://www.twitch.tv/worldwidepixel" text="Twitch">
+					<Twitch />
+				</PixelIconButton>
+				<PixelIconButton external={true} to="https://modrinth.com/user/worldwidepixel" text="Modrinth">
+					<Box />
+				</PixelIconButton>
+				<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
+					<Bird />
+				</PixelIconButton>
+			</div>
+		</div>
+	</div>
+	<canvas class="brightness-50 saturate-200" id="gradient-canvas" data-transition-in></canvas>
+</Default>

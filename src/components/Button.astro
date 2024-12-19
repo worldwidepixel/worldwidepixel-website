@@ -1,0 +1,26 @@
+---
+import { ExternalLink } from "lucide-astro";
+
+const { external, showIcon, to, classList, style } = Astro.props;
+---
+
+<a
+	href={to}
+	target={external ? "_blank" : ""}
+	style={style ?? ""}
+	class={"button hover:underline " + (classList ?? "")}>
+	{
+		external && (
+			<span class="flex w-fit flex-row items-center gap-2 font-bold text-brand-text-secondary">
+				<slot /> {showIcon && <ExternalLink />}
+			</span>
+		)
+	}
+	{
+		!external && (
+			<span class="font-bold text-brand-text-secondary">
+				<slot />
+			</span>
+		)
+	}
+</a>

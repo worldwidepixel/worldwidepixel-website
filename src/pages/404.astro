@@ -1,0 +1,19 @@
+---
+import Link from "../components/Link.astro";
+import Default from "../layouts/Default.astro";
+
+const path = Astro.url.pathname;
+---
+
+<Default title="404">
+	<div class="flex h-full flex-col justify-center gap-2">
+		<div class="flex w-full flex-col gap-4">
+			<span class="text-9xl font-bold"><span class="text-brand-colour">404</span>.</span>
+			<span class="font-mono">{path}</span>
+			<span class="flex flex-col gap-2">
+				<span> Page not found. </span>
+				<span> Maybe go back to the <Link to="/">home</Link> page? </span>
+			</span>
+		</div>
+	</div>
+</Default>

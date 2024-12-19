@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Flare",
+        "icon": "/img/music/flare.png",
+        "date": "July 1, 2024",
+        "colour": "#041d30",
+        "description": [
+            "Everything that doesn't 'belong' somewhere. Full of failures, rejects, and firsts."
+        ],
+        "links": [
+            {
+                "name": "Bandcamp",
+                "to": "https://worldwidepixel.bandcamp.com/album/flare"
+            }
+        ]
+    },
+    {
+        "title": "Wildflower",
+        "icon": "/img/music/wildflower.png",
+        "date": "March 26, 2024",
+        "colour": "#041d30",
+        "description": [
+            "You've got to start somewhere."
+        ],
+        "links": [
+            {
+                "name": "Bandcamp",
+                "to": "https://worldwidepixel.bandcamp.com/album/wildflower"
+            }
+        ]
+    }
+]
