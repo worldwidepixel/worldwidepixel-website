@@ -24,7 +24,7 @@ First: I am super grateful to so many people for making this year particularly a
 -   callmeecho (very very good at making things)
 -   devin (helped inspire me to make music)
 -   encode42/erora (helped inspire me to make music)
--   rowandev (unbelievable helpful in creating bluerinth)
+-   rowandev (unbelievably helpful in creating bluerinth)
 -   brewbraw (taught me what NPM was)
 -   ktrain (has helped out with notessential and modwrapped)
 -   hama (jack of all game design trades)
