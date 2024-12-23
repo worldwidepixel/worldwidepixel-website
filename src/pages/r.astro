@@ -1,0 +1,23 @@
+---
+import Default from "../layouts/Default.astro";
+import data from "../data/redirects.json";
+import { getCollection } from "astro:content";
+
+const blogPosts = await getCollection("posts");
+---
+
+<script is:inline define:vars={{ data: data, blogPosts: blogPosts }}>
+	const params = new URLSearchParams(window.location.search);
+	const inKey = params.get("to");
+	const search = data.filter((element) => element.in === inKey);
+	const blogSearch = blogPosts.filter((post) => post.slug === inKey);
+
+	let outPath = search.length !== 0 ? search[0].out : "https://worldwidepixel.ca/";
+	outPath = blogSearch.length !== 0 ? `/blog/${blogSearch[0].slug}` : outPath;
+
+	window.location.replace(outPath);
+</script>
+
+<Default>
+	<span> Redirecting to requested page... </span>
+</Default>

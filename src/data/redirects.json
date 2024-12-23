@@ -1,0 +1,54 @@
+[
+	{
+		"in": "snapper",
+		"out": "https://modrinth.com/mod/snapper"
+	},
+	{
+		"in": "hollow",
+		"out": "https://modrinth.com/mod/hollow"
+	},
+	{
+		"in": "armistice",
+		"out": "https://modrinth.com/mod/armistice"
+	},
+	{
+		"in": "pixelpack",
+		"out": "https://modrinth.com/resourcepack/pixelpack"
+	},
+	{
+		"in": "wrapped",
+		"out": "https://wrapped.worldwidepixel.ca"
+	},
+	{
+		"in": "spirit",
+		"out": "https://spiritstudios.dev"
+	},
+	{
+		"in": "vital",
+		"out": "https://usevital.github.io"
+	},
+	{
+		"in": "bluerinth",
+		"out": "https://addons.mozilla.org/firefox/addon/bluerinth/"
+	},
+	{
+		"in": "wildflower",
+		"out": "https://worldwidepixel.bandcamp.com/album/wildflower"
+	},
+	{
+		"in": "flare",
+		"out": "https://worldwidepixel.bandcamp.com/album/flare"
+	},
+	{
+		"in": "joy",
+		"out": "https://worldwidepixel.bandcamp.com/album/joy"
+	},
+	{
+		"in": "mf121",
+		"out": "https://modfest.bandcamp.com/album/modfest-121-time-technology-throwbacks-original-modpack-soundtrack"
+	},
+	{
+		"in": "366",
+		"out": "https://worldwidepixel.bandcamp.com/album/366"
+	}
+]
