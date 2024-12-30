@@ -1,5 +1,22 @@
 [
 	{
+		"title": "366",
+		"icon": "/img/music/366.png",
+		"date": "December 31, 2024",
+		"colour": "#fb464f",
+		"description": ["From respectably ridiculous to properly pretty, this is 366."],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://worldwidepixel.bandcamp.com/album/366"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/album/4L894K0dnCGhjzCAiz5dvf"
+			}
+		]
+	},
+	{
 		"title": "ModFest 1​.​21: Time, Technology, & Throwbacks (Original Modpack Soundtrack)",
 		"icon": "/img/music/modfest121.png",
 		"date": "November 28, 2024",
