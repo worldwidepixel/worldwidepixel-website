@@ -13,6 +13,10 @@
 			{
 				"name": "Spotify",
 				"to": "https://open.spotify.com/album/4L894K0dnCGhjzCAiz5dvf"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/album/366-ep/1788000821"
 			}
 		]
 	},
