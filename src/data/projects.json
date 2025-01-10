@@ -71,7 +71,7 @@
 		"name": "Loop",
 		"icon": "/img/icons/loop.png",
 		"colour": "#041d30",
-		"description": ["An organization dedicated to improving the legacy Minecraft experience."],
+		"description": ["Loop is a small group that makes content for Minecraft."],
 		"links": [
 			{
 				"name": "Website",
@@ -131,6 +131,22 @@
 			}
 		]
 	},
+	{
+		"name": "Snapper",
+		"icon": "https://raw.githubusercontent.com/SpiritGameStudios/.github/refs/heads/main/assets/snapper/snapper-512.png",
+		"colour": "#041d30",
+		"description": ["Screenshots, made simple."],
+		"links": [
+			{
+				"name": "Github",
+				"to": "https://github.com/SpiritGameStudios/Snapper"
+			},
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/mod/snapper"
+			}
+		]
+	}
 	{
 		"name": "Spirit Studios",
 		"icon": "https://avatars.githubusercontent.com/u/175811374?s=200&v=4",
