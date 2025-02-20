@@ -4,7 +4,7 @@ import Default from "../../layouts/Default.astro";
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection("posts");
-	return blogEntries.map((entry) => ({
+	return blogEntries.map((entry: any) => ({
 		params: { slug: entry.slug },
 		props: { entry },
 	}));
@@ -16,7 +16,7 @@ const timeFormat = new Intl.DateTimeFormat("en-CA", {
 	year: "numeric",
 });
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as any;
 const { Content } = await entry.render();
 ---
 

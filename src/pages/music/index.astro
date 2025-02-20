@@ -3,15 +3,26 @@ import Button from "../../components/Button.astro";
 import Default from "../../layouts/Default.astro";
 import music from "../../data/music.json";
 import { ArrowDown } from "lucide-astro";
+import type { MusicProject } from "../../env";
 
 function getGradientFromProject(colour: string) {
 	return `background: linear-gradient(135deg, ${colour}40 0%, rgba(0,0,0,0) 100%);`;
+}
+
+function formatDate(input: string) {
+	const date: Date = new Date(input);
+	const format = new Intl.DateTimeFormat("en-GB", {
+		dateStyle: "long",
+	});
+	return format.format(date);
 }
 ---
 
 <Default title="music">
 	<div class="flex flex-col gap-4 py-16 text-sm">
-		<span class="text-6xl font-bold">Over the past year, I've made some <span class="brand-gradient">music</span>.</span>
+		<span class="text-6xl font-bold"
+			>Over the past year, I've made some <span class="brand-gradient">music</span>.</span
+		>
 		While just an experiment with a new format currently, I hope to make more. This is quite an interesting (and fun)
 		medium!
 		<span class="flex flex-row items-center gap-2 text-2xl underline decoration-brand-colour decoration-wavy"
@@ -20,10 +31,11 @@ function getGradientFromProject(colour: string) {
 	</div>
 	<div class="flex flex-col justify-center gap-4">
 		{
-			music.map((music_project: any) => (
+			music.map((music_project: MusicProject) => (
 				<div class="flex w-full flex-col">
-					<div
-						class="flex w-full flex-row gap-6 rounded-3xl p-6"
+					<a
+						href={`/music/release/${music_project.slug}`}
+						class="flex w-full flex-row gap-6 rounded-3xl p-6 transition active:scale-95"
 						style={getGradientFromProject(music_project.colour)}>
 						<img
 							draggable="false"
@@ -36,28 +48,12 @@ function getGradientFromProject(colour: string) {
 								{music_project.title}
 							</span>
 							<span class="flex flex-col gap-2">
-								{music_project.description.map((paragraph: any) => (
-									<span>{paragraph}</span>
-								))}
+								<span> {music_project.description[0]}</span>
 							</span>
-							<div class="flex flex-row flex-wrap items-center gap-2">
-								{music_project.links.map((link: any) => (
-									<Button
-										classList={
-											music_project.colour === "#ffffff"
-												? "subtext_dark"
-												: "" + ` bg-brand-background-secondary`
-										}
-										to={link.to}
-										external={true}
-										showIcon={true}>
-										{link.name}
-									</Button>
-								))}
-							</div>
-							<span class="text-brand-text-secondary">released {music_project.date}</span>
+							<hr class="border-brand-text-secondary opacity-25" />
+							<span class="text-brand-text-secondary">released {formatDate(music_project.date)}</span>
 						</div>
-					</div>
+					</a>
 				</div>
 			))
 		}

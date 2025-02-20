@@ -1,10 +1,19 @@
 [
 	{
 		"title": "366",
+		"slug": "366",
 		"icon": "/img/music/366.png",
-		"date": "December 31, 2024",
+		"date": "2024-12-31",
 		"colour": "#fb464f",
-		"description": ["From respectably ridiculous to properly pretty, this is 366."],
+		"description": [
+			"From respectably ridiculous to properly pretty, this is 366.",
+			"Happy 2025, and thank you.",
+			"This year has been an incredible journey, and I can't help but be infinitely grateful to the many people who have helped me along the way.",
+			"Being one of my 'December projects' this year, all music composed in this album was made this month. Even so, I've tried to venture out into new musical territories with this project.",
+			"From respectably ridiculous to properly pretty, this is 366.",
+			"I hope this coming year is even better than the last!",
+			"<3, WWP"
+		],
 		"links": [
 			{
 				"name": "Bandcamp",
@@ -22,8 +31,9 @@
 	},
 	{
 		"title": "ModFest 1​.​21: Time, Technology, & Throwbacks (Original Modpack Soundtrack)",
+		"slug": "modfest-121-time-technology-throwbacks-original-modpack-soundtrack",
 		"icon": "/img/music/modfest121.png",
-		"date": "November 28, 2024",
+		"date": "2024-11-28",
 		"colour": "#dd604a",
 		"description": ["Enjoy the tunes that line the time walls of Stasis! By Nulb, lumiscosity and WorldWidePixel."],
 		"links": [
@@ -43,10 +53,19 @@
 	},
 	{
 		"title": "Joy",
+		"slug": "joy",
 		"icon": "/img/music/joy.png",
-		"date": "November 11, 2024",
+		"date": "2024-11-11",
 		"colour": "#09309d",
-		"description": ["You know what? Why not make something lovely?"],
+		"description": [
+			"You know what? Why not make something lovely?",
+			"6 months in the making; Joy.",
+			"A learning experience, if anything: this project helped me gain a deeper understanding of music production.",
+			"Of course, that's not the only reason it's here.",
+			"I hope this project satiates my need to make something just.. lovely.",
+			"Something to curl up to, something to love.",
+			"Something to feel Joy about."
+		],
 		"links": [
 			{
 				"name": "Bandcamp",
@@ -64,10 +83,17 @@
 	},
 	{
 		"title": "Flare",
+		"slug": "flare",
 		"icon": "/img/music/flare.png",
-		"date": "July 1, 2024",
+		"date": "2024-06-01",
 		"colour": "#fd7369",
-		"description": ["Everything that doesn't 'belong' somewhere. Full of failures, rejects, and firsts."],
+		"description": [
+			"Everything that doesn't 'belong' somewhere. Full of failures, rejects, and firsts.",
+			"My first experiments- actually, my first tracks.",
+			"\"missing\", \"burst\", and \"amphitheatre\" were what helped me really get my first footing into creating music.",
+			"Meanwhile, \"rumble\" and \"prenuptial\" were some early (and rather wacky) tracks for Spirit Studios- before it even had that name.",
+			"While very silly, I hope someone can find the feeling in this that I put into these tracks when I first made them. And hopefully, you can get a laugh out of it too."
+		],
 		"links": [
 			{
 				"name": "Bandcamp",
@@ -85,10 +111,18 @@
 	},
 	{
 		"title": "Wildflower",
+		"slug": "wildflower",
 		"icon": "/img/music/wildflower.png",
-		"date": "March 26, 2024",
+		"date": "2024-03-26",
 		"colour": "#a100ff",
-		"description": ["You've got to start somewhere."],
+		"description": [
+			"You've got to start somewhere.",
+			"My first release.",
+			"I didn't know where this would take me, all I knew is that I needed to make it.",
+			"It will always take a special place in my heart.",
+			"When you listen to these tracks, picture yourself in a forest, tall trees and fresh air. Imagine the carefree environment you've always dreamt of.",
+			"Take a minute, smell the roses (or perhaps wildflowers), and enjoy your day."
+		],
 		"links": [
 			{
 				"name": "Bandcamp",
