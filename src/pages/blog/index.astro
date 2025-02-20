@@ -22,8 +22,8 @@ function getGradient(colour: string) {
 	<div class="flex flex-col justify-center gap-4">
 		{
 			posts
-				.filter((post) => !post.data.hidden)
-				.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+				.filter((post: any) => !post.data.hidden)
+				.sort((a: any, b: any) => b.data.date.valueOf() - a.data.date.valueOf())
 				.map((post: any) => (
 					<a href={`/blog/${post.slug}`} class="flex w-full flex-col transition active:scale-95">
 						<div
