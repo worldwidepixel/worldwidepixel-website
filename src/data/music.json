@@ -35,7 +35,13 @@
 		"icon": "/img/music/modfest121.png",
 		"date": "2024-11-28",
 		"colour": "#dd604a",
-		"description": ["Enjoy the tunes that line the time walls of Stasis! By Nulb, lumiscosity and WorldWidePixel."],
+		"description": [
+			"Enjoy the tunes that line the time walls of Stasis! By Nulb, lumiscosity and WorldWidePixel.",
+			"ModFest is a recurring event that celebrates the minecraft modding community!",
+			"For ModFest 1.21 a few talented artists in our community decided to band together to make a full length soundtrack.",
+			"Some rights reserved. Please refer to individual track pages on Bandcamp for license info."
+		],
+
 		"links": [
 			{
 				"name": "Bandcamp",
