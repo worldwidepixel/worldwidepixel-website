@@ -62,5 +62,9 @@
 	{
 		"in": "use",
 		"out": "https://worldwidepixel.ca/music/use"
+	},
+	{
+		"in": "pizza",
+		"out": "https://www.youtube.com/watch?v=qWNQUvIk954"
 	}
 ]
