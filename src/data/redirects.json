@@ -50,5 +50,21 @@
 	{
 		"in": "366",
 		"out": "https://worldwidepixel.bandcamp.com/album/366"
+	},
+	{
+		"in": "cantilever",
+		"out": "https://modrinth.com/mod/cantilever"
+	},
+	{
+		"in": "soundteam",
+		"out": "https://modfest.bandcamp.com"
+	},
+	{
+		"in": "use",
+		"out": "https://worldwidepixel.ca/music/use"
+	},
+	{
+		"in": "pizza",
+		"out": "https://www.youtube.com/watch?v=qWNQUvIk954"
 	}
 ]

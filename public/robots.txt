@@ -1,0 +1,22 @@
+# See you in court, Sam Altman!
+
+User-agent: GPTbot
+User-agent: Google-Extended
+User-agent: PerplexityBot
+User-agent: anthropic-ai
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: Diffbot
+User-agent: FacebookBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: cohere-ai
+User-agent: Claude-Web
+User-agent: ClaudeBot
+User-agent: YouBot
+User-agent: DataForSeoBot
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: *
+Disallow: /r

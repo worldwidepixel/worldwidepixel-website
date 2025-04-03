@@ -40,6 +40,22 @@
 		]
 	},
 	{
+		"name": "Cantilever",
+		"icon": "https://raw.githubusercontent.com/SpiritGameStudios/Cantilever/refs/heads/main/src/main/resources/assets/cantilever/icon.png",
+		"colour": "#041d30",
+		"description": ["A no-nonsense Minecraft ↔ Discord bridge."],
+		"links": [
+			{
+				"name": "Github",
+				"to": "https://github.com/SpiritGameStudios/Cantilever"
+			},
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/mod/cantilever"
+			}
+		]
+	},
+	{
 		"name": "Hollow",
 		"icon": "https://raw.githubusercontent.com/CallMeEchoCodes/Hollow/main/src/main/resources/assets/hollow/icon.png",
 		"colour": "#041d30",
@@ -56,46 +72,6 @@
 		]
 	},
 	{
-		"name": "imateapot.xyz",
-		"icon": "https://www.imateapot.xyz/favicon.ico",
-		"colour": "#041d30",
-		"description": ["I am a teapot. Are you?"],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://imateapot.xyz/"
-			}
-		]
-	},
-	{
-		"name": "Loop",
-		"icon": "/img/icons/loop.png",
-		"colour": "#041d30",
-		"description": ["Loop is a small group that makes content for Minecraft."],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://loopmc.org"
-			},
-			{
-				"name": "Modrinth",
-				"to": "https://modrinth.com/organization/loop"
-			}
-		]
-	},
-	{
-		"name": "Minefacts",
-		"icon": "https://facts.worldwidepixel.ca/img/icon.png",
-		"colour": "#041d30",
-		"description": ["One Minecraft fact, every day, for all of 2024."],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://facts.worldwidepixel.ca/"
-			}
-		]
-	},
-	{
 		"name": "modbar",
 		"icon": "https://raw.githubusercontent.com/worldwidepixel/modBar/main/img/icon256.png",
 		"colour": "#041d30",
@@ -104,6 +80,26 @@
 			{
 				"name": "Mozilla Addons",
 				"to": "https://addons.mozilla.org/firefox/addon/themodbar"
+			}
+		]
+	},
+	{
+		"name": "ModFest Sound Team",
+		"icon": "https://raw.githubusercontent.com/ModFest/art/refs/heads/v2/icon/512w/modfest/full.png",
+		"colour": "#041d30",
+		"description": ["Helping create the music heard during ModFest events."],
+		"links": [
+			{
+				"name": "Bandcamp",
+				"to": "https://modfest.bandcamp.com/"
+			},
+			{
+				"name": "Spotify",
+				"to": "https://open.spotify.com/artist/4p1uUx40Ku1GhbFPVjyp2l/"
+			},
+			{
+				"name": "Apple Music",
+				"to": "https://music.apple.com/artist/modfest-sound-team/1782620677/"
 			}
 		]
 	},
