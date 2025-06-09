@@ -11,7 +11,7 @@ date: 2024-02-26
 tags:
     - Discussion
     - old
-hidden: false
+hidden: true
 ---
 
 _A mediocre blogpost from February. Read with embarrasment._
