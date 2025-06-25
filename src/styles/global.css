@@ -61,7 +61,7 @@
 	@apply font-bold;
 }
 .md li {
-	@apply mb-4 ml-8 list-disc;
+	@apply mb-2 ml-8 list-disc;
 }
 
 .centre {

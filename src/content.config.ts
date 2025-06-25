@@ -21,6 +21,22 @@ const blogPostsCollection = defineCollection({
 	}),
 });
 
+const musicCollection = defineCollection({
+	type: "content",
+	schema: z.object({
+		title: z.string(),
+		icon: z.string(),
+		date: z.coerce.date(),
+		summary: z.string(),
+		colour: z.string(),
+		links: z.array(z.object({
+			name: z.string(),
+			to: z.string()
+		}))
+	})
+})
+
 export const collections = {
 	posts: blogPostsCollection,
+	music: musicCollection
 };

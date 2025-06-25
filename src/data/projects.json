@@ -162,7 +162,7 @@
 	{
 		"name": "Unofficial Modrinth Status",
 		"icon": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpgwbdmj36f5obdc26puokqc/bafkreibeqin5m2vvecqj57eodqjfmj3r7mt4iloah4k6f7gvv24z5omtxu@jpeg",
-		"colour": "#1dd86d",
+		"colour": "#041d30",
 		"description": ["Unofficial automated uptime monitor account for Modrinth."],
 		"links": [
 			{
@@ -174,7 +174,7 @@
 	{
 		"name": "Unofficial Mojang Status",
 		"icon": "https://cdn.bsky.app/img/avatar/plain/did:plc:beli5qagbqkeguidoweb2s2r/bafkreie7hn5a55ldur7z5juci32ltsywyymp5cfz636y3srxnansiyfhvu@jpeg",
-		"colour": "#f0323e",
+		"colour": "#041d30",
 		"description": ["Unofficial automated uptime monitor account for Mojang Studios."],
 		"links": [
 			{

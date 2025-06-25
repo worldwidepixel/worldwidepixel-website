@@ -1,57 +1,67 @@
 ---
-import type { MusicProject } from "../../../env";
-import music from "../../../data/music.json";
 import Default from "../../../layouts/Default.astro";
 import Button from "../../../components/Button.astro";
+import { getCollection } from "astro:content";
+import colour, { type GrabbedColour } from "colorthief";
 
 export async function getStaticPaths() {
-	let paths = [];
-
-	for (const project of music) {
-		paths.push({ params: { slug: project.slug } });
-	}
-
-	return paths;
+	const musicEntries = await getCollection("music");
+	return musicEntries.map((entry: any) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
 }
 
-const releaseSlug: string = Astro.params.slug;
-const release: MusicProject = music.find((project) => project.slug === releaseSlug) as MusicProject;
+const { entry } = Astro.props as any;
+const { Content } = await entry.render();
 
-if (!release.slug) {
-	Astro.response.status = 404;
-	Astro.response.statusText = "Release not found";
-}
-
-function formatDate(input: string) {
-	const date: Date = new Date(input);
+function formatDate(input: Date) {
 	const format = new Intl.DateTimeFormat("en-GB", {
 		dateStyle: "long",
 	});
-	return format.format(date);
+	return format.format(input);
 }
+
+export function getRgbCSS(colour: GrabbedColour) {
+	return `rgb(${colour[0]}, ${colour[1]}, ${colour[2]})`;
+}
+
+export function getGradient(palette: GrabbedColour[], mainColour: GrabbedColour) {
+	return `linear-gradient(90deg,${getRgbCSS(palette[1])} 0%, ${getRgbCSS(mainColour)} 50%, ${getRgbCSS(palette[2])} 100%)`;
+}
+
+const mainColour = await colour.getColor("./public" + entry.data.icon);
+const gradient = await colour.getPalette("./public" + entry.data.icon);
 ---
 
-<Default title={`${release.title} - music`}>
+<Default title={entry.data.title}>
 	<div class="flex flex-col gap-8 py-16 text-sm">
-		<div class="flex flex-row items-center gap-6">
+		<img
+			draggable="false"
+			style={{ borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)` }}
+			class="mx-auto block size-56 rounded-md border-[1px] shadow-2xl md:hidden"
+			src={entry.data.icon}
+		/>
+		<div class="grid grid-cols-1 grid-rows-[auto_auto] gap-x-6 gap-y-4 md:grid-cols-[12rem_auto]">
 			<img
 				draggable="false"
-				style={{ borderColor: `color-mix(in oklab, ${release.colour}, transparent 80%)` }}
-				class="hidden h-48 w-48 rounded-md border-[1px] shadow-2xl md:block"
-				src={release.icon}
+				style={{ borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)` }}
+				class="row-start-2 hidden size-48 rounded-md border-[1px] shadow-2xl md:block"
+				src={entry.data.icon}
 			/>
+			<span class="italic text-brand-text-secondary md:col-start-2">{formatDate(entry.data.date)}</span>
+
 			<div class="flex flex-col gap-4">
-				<span class="italic text-brand-text-secondary">{formatDate(release.date)}</span>
-				<span class="text-6xl font-bold">{release.title}</span>
+				<span class="text-6xl font-bold">{entry.data.title}</span>
 				<span>
-					{release.description[0]}
+					{entry.data.summary}
 				</span>
 				<div class="flex flex-row flex-wrap items-center gap-2">
 					{
-						release.links.map((link: any) => (
+						entry.data.links.map((link: { name: string; to: string }) => (
 							<Button
-								classList={`bg-opacity-50 bg-brand-background-secondary border-b-[1px] border-[${release.colour}]`}
-								style={{ borderColor: `color-mix(in oklab, ${release.colour}, transparent 80%)` }}
+								classList={`bg-opacity-50 bg-brand-background-secondary border-b-[1px] border-[${entry.data.colour}]`}
+								style={{ borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)` }}
 								to={link.to}
 								external={true}
 								showIcon={true}>
@@ -62,14 +72,20 @@ function formatDate(input: string) {
 				</div>
 			</div>
 		</div>
-		{release.description.slice(1).length > 0 && <span class="border-b" />}
-		<div class="md text-md flex max-w-2xl flex-col items-start gap-4">
-			{release.description.slice(1).map((line: string) => <span>{line}</span>)}
+		<span class="border-b"></span>
+		<div class="md text-md">
+			<Content />
 		</div>
 	</div>
 
-	<img
-		src={release.icon}
-		class="bgimg absolute left-0 top-0 z-[-2] h-[75%] w-full pointer-events-none overflow-hidden object-cover opacity-25 blur-2xl saturate-200"
-	/>
+	<div
+		style={`background: ${getGradient(gradient, mainColour)};
+`}
+		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-25 blur-2xl saturate-200">
+	</div>
+
+	<!--<img
+		src={entry.data.icon}
+		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-25 blur-2xl saturate-200"
+	/> -->
 </Default>
