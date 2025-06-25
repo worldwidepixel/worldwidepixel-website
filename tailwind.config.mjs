@@ -21,7 +21,7 @@ export default {
 				"brand-background": "#16181c",
 				"brand-background-secondary": "#262a31",
 				"brand-background-blue": "#041d30",
-				"brand-background-transparent": "#262a31bf",
+				"brand-background-transparent": "#262a3180",
 				"brand-scrollbar": "#041d30",
 				"brand-border": "#21292c",
 				"brand-border-alt": "#d7c8ff",

@@ -3,6 +3,7 @@ import Default from "../../../layouts/Default.astro";
 import Button from "../../../components/Button.astro";
 import { getCollection } from "astro:content";
 import colour, { type GrabbedColour } from "colorthief";
+import type { Link } from "../../../env";
 
 export async function getStaticPaths() {
 	const musicEntries = await getCollection("music");
@@ -32,6 +33,25 @@ export function getGradient(palette: GrabbedColour[], mainColour: GrabbedColour)
 
 const mainColour = await colour.getColor("./public" + entry.data.icon);
 const gradient = await colour.getPalette("./public" + entry.data.icon);
+
+// Bandcamp Embeds
+
+const linksHaveBandcamp = entry.data.links.filter((link: Link) => link.name.toLowerCase() === "bandcamp");
+
+async function getBandcampEmbedData() {
+	const bcUrl = entry.data.links.find((link: Link) => link.name.toLowerCase() === "bandcamp");
+	const bcResponse = await fetch(bcUrl.to);
+	const bcText = await bcResponse.text();
+	const albumIdRegex = /(?<=<!-- (album|track) id )(.*)(?= -->)/;
+	const albumId = albumIdRegex.exec(bcText)?.[0];
+	return {
+		id: albumId,
+		colour: entry.data.colour,
+		url: bcUrl.to,
+	};
+}
+
+const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 ---
 
 <Default title={entry.data.title}>
@@ -73,15 +93,41 @@ const gradient = await colour.getPalette("./public" + entry.data.icon);
 			</div>
 		</div>
 		<span class="border-b"></span>
-		<div class="md text-md">
-			<Content />
+		<div class="flex w-full flex-col items-center gap-4 lg:flex-row lg:items-start">
+			<div class="md text-md">
+				<Content />
+			</div>
+			{
+				linksHaveBandcamp && bcData && (
+					<div class="flex w-fit flex-col gap-1">
+						<div class="w-fit rounded-3xl border bg-brand-background-secondary p-2">
+							<iframe
+								class="rounded-2xl"
+								style="border: 0; width: 350px; height: 654px;"
+								src={`https://bandcamp.com/EmbeddedPlayer/${bcData.url.includes("album") ? "album" : "track"}=${bcData.id}/size=large/bgcol=ffffff/linkcol=${bcData.colour.replace("#", "")}/transparent=true/`}
+								seamless
+							/>
+						</div>
+						<p class="p-2 text-center text-xs text-slate-500 transition-colors hover:text-slate-300 [&>a]:hover:text-blue-500">
+							Embedded Bandcamp content is subject to their
+							<a
+								class="text-center text-blue-700 transition-colors"
+								target="_blank"
+								href="https://bandcamp.com/privacy">
+								privacy policy
+							</a>
+							.
+						</p>
+					</div>
+				)
+			}
 		</div>
 	</div>
 
 	<div
 		style={`background: ${getGradient(gradient, mainColour)};
 `}
-		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-25 blur-2xl saturate-200">
+		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-35 blur-2xl saturate-200">
 	</div>
 
 	<!--<img
