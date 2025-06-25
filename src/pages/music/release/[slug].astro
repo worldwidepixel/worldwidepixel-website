@@ -93,8 +93,8 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 			</div>
 		</div>
 		<span class="border-b"></span>
-		<div class="flex w-full flex-col items-center gap-4 lg:flex-row lg:items-start">
-			<div class="md text-md">
+		<div class="flex w-full flex-col items-center gap-4 lg:flex-row lg:items-start lg:justify-between">
+			<div class="md">
 				<Content />
 			</div>
 			{
@@ -129,9 +129,4 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 `}
 		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-35 blur-2xl saturate-200">
 	</div>
-
-	<!--<img
-		src={entry.data.icon}
-		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-25 blur-2xl saturate-200"
-	/> -->
 </Default>

@@ -17,4 +17,4 @@ links:
 
 My first experiments- actually, my first songs.
 
-\"missing\", \"burst\", and \"amphitheatre\" were what helped me really get my first footing into creating music. Meanwhile, \"rumble\" and \"prenuptial\" were some early (and rather wacky) tracks for Spirit Studios- before it even had that name. While very silly, I hope someone can find the feeling in this that I put into these tracks when I first made them. And hopefully, you can get a laugh out of it too.
+"missing", "burst", and "amphitheatre" were what helped me really get my first footing into creating music. Meanwhile, \"rumble\" and \"prenuptial\" were some early (and rather wacky) tracks for Spirit Studios- before it even had that name. While very silly, I hope someone can find the feeling in this that I put into these tracks when I first made them. And hopefully, you can get a laugh out of it too.
