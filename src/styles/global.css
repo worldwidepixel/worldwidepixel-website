@@ -64,6 +64,10 @@
 	@apply mb-2 ml-8 list-disc;
 }
 
+.md a {
+	@apply text-blue-400 underline;
+}
+
 .centre {
 	@apply flex flex-col items-center justify-center gap-2;
 }

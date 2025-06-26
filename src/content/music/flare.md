@@ -17,4 +17,8 @@ links:
 
 My first experiments- actually, my first songs.
 
-"missing", "burst", and "amphitheatre" were what helped me really get my first footing into creating music. Meanwhile, \"rumble\" and \"prenuptial\" were some early (and rather wacky) tracks for Spirit Studios- before it even had that name. While very silly, I hope someone can find the feeling in this that I put into these tracks when I first made them. And hopefully, you can get a laugh out of it too.
+### Song notes
+
+**missing** **burst** and **amphitheatre** were created for the sake of making things- actually, they were my first tracks altogether. (they are ordered in the release chronologically.) Around that time, I had found an old tape recorder and thought it would be fun to play around with (it was), so I used it in some music. I'm still quite fond of **missing**.
+
+**rumble** and **prenuptial** were some early (and rather wacky) tracks for Spirit Studios- before it even had that name. **rumble** was originally going to be a disc included alongside the ModFest: Carnival release of Bombastic, but it did not fit the project vibe and was cut. **prenuptial** was created as an April Fools' joke to be included in Hollow as a disc. Soon after this, we implemented **Postmortem**. (I wonder if it uses the same code...)
