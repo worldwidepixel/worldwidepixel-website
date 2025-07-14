@@ -13,19 +13,19 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.0)(typescript@5.8.3)
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@astropub/md':
         specifier: ^1.0.0
         version: 1.0.0(@astrojs/markdown-remark@6.3.2)
       astro:
-        specifier: ^5.10.1
-        version: 5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: ^5.11.0
+        version: 5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       colorthief:
         specifier: ^2.6.0
         version: 2.6.0
       lucide-astro:
         specifier: ^0.446.0
-        version: 0.446.0(astro@5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))
+        version: 0.446.0(astro@5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))
       tailwindcss:
         specifier: ^3.4.13
         version: 3.4.17
@@ -687,8 +687,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@5.10.1:
-    resolution: {integrity: sha512-DJVmt+51jU1xmgmAHCDwuUgcG/5aVFSU+tcX694acAZqPVt8EMUAmUZcJDX36Z7/EztnPph9HR3pm72jS2EgHQ==}
+  astro@5.11.0:
+    resolution: {integrity: sha512-MEICntERthUxJPSSDsDiZuwiCMrsaYy3fnDhp4c6ScUfldCB8RBnB/myYdpTFXpwYBy6SgVsHQ1H4MuuA7ro/Q==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2345,9 +2345,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -2852,7 +2852,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -3487,9 +3487,9 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lucide-astro@0.446.0(astro@5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)):
+  lucide-astro@0.446.0(astro@5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
-      astro: 5.10.1(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.11.0(@types/node@24.0.4)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
 
   magic-string@0.30.17:
     dependencies:
