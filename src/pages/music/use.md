@@ -5,12 +5,13 @@ summary: "Thank you for your interest! I hope this can quickly answer any questi
 layout: "../../layouts/DefaultMD.astro"
 ---
 
+_Updated 2025-07-13_
 First and foremost, I reserve all rights to my music. (I just feel more comfortable releasing it in this
 way)
 
 The details are pretty simple:
 
-- You must provide credit to me (WorldWidePixel)
+- You must provide attribution to me (WorldWidePixel)
 - You may not reupload my music verbatim
 - You may use my music under the fair use doctrine, including but not limited to the following:
     - Using my music in videos or streams
