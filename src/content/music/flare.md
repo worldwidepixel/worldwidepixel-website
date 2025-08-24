@@ -6,7 +6,7 @@ summary: "Everything that doesn't 'belong' somewhere. Full of failures, rejects,
 colour: "#fd7369"
 links:
     - name: "Bandcamp"
-      to: "https://worldwidepixel.bandcamp.com/album/flare"
+      to: "https://lynndova.bandcamp.com/album/flare"
     - name: "Spotify"
       to: "https://open.spotify.com/album/1ooh1yiUJ3KCihqnif6qk7"
     - name: "Apple Music"
