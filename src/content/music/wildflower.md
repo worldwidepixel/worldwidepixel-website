@@ -6,7 +6,7 @@ summary: "You've got to start somewhere."
 colour: "#a100ff"
 links:
     - name: "Bandcamp"
-      to: "https://worldwidepixel.bandcamp.com/album/wildflower"
+      to: "https://lynndova.bandcamp.com/album/wildflower"
     - name: "Spotify"
       to: "https://open.spotify.com/album/4M4e76UmfVYmu502ETYlri"
     - name: "Apple Music"
