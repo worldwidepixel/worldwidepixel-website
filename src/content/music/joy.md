@@ -6,7 +6,7 @@ summary: "You know what? Why not make something lovely?"
 colour: "#09309d"
 links:
     - name: "Bandcamp"
-      to: "https://worldwidepixel.bandcamp.com/album/joy"
+      to: "https://lynndova.bandcamp.com/album/joy"
     - name: "Spotify"
       to: "https://open.spotify.com/album/1aEjkFTr3QRurQHKJv7iE9"
     - name: "Apple Music"
