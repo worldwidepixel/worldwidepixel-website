@@ -2,7 +2,7 @@
 import Link from "../components/Link.astro";
 import PixelDiamond from "../components/PixelDiamond.astro";
 import PixelLogo from "../components/PixelLogo.astro";
-import { Github, Youtube, Box, Bird } from "lucide-astro";
+import { Github, Youtube, Modrinth, Bluesky } from "simple-icons-astro";
 import "../styles/global.css";
 import CircleButton from "../components/CircleButton.astro";
 
@@ -15,7 +15,7 @@ if (title === "" || title === undefined) {
 ---
 
 <!doctype html>
-<html class="h-full bg-brand-background text-brand-text">
+<html lang="en" class="h-full bg-brand-background text-brand-text">
 	<head>
 		<title>{title}</title>
 		<meta charset="utf-8" />
@@ -40,15 +40,19 @@ if (title === "" || title === undefined) {
 		<meta name="twitter:card" content="summary" />
 		<meta name="theme-color" content="#28cbd4" />
 		<meta property="og:description" content="I make things. On the internet." />
-		<link rel="me" href="https://mastodon.social/@worldwidepixel"></link>
+		<link rel="me" href="https://mastodon.social/@worldwidepixel" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
+
 	<body class="flex h-dvh flex-col">
 		<nav class="flex w-full flex-row justify-center">
 			<div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 p-6 sm:justify-between">
 				<div
 					class="grid w-full select-none grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 rounded-3xl border bg-brand-background-transparent p-4 text-base font-bold shadow backdrop-blur sm:flex">
 					<span class="col-span-2">
-						<a class="block w-fit" href="https://worldwidepixel.ca"><PixelLogo className="p-0.5" /></a>
+						<a aria-label="WorldWidePixel Home" class="block w-fit" href="https://worldwidepixel.ca"
+							><PixelLogo className="p-0.5" /></a
+						>
 					</span>
 					<div class="hidden sm:block">
 						<PixelDiamond />
@@ -69,21 +73,40 @@ if (title === "" || title === undefined) {
 			<div class="w-full max-w-[80rem] px-6">
 				<div class="grid w-full grid-cols-1 sm:grid-cols-3">
 					<div class="flex flex-col justify-center gap-3 p-6">
-						<a class="flex w-fit flex-row items-center gap-4 text-xl hover:underline" href="/">
+						<a
+							aria-label="WorldWidePixel Home"
+							class="flex w-fit flex-row items-center gap-4 text-xl hover:underline"
+							href="/">
 							<PixelLogo className="p-0.5" />
 							WorldWidePixel
 						</a>
 						<div class="flex flex-row gap-1">
-							<CircleButton to="https://github.com/worldwidepixel"><Github /></CircleButton>
-							<CircleButton to="https://www.youtube.com/@worldwidepixel"><Youtube /></CircleButton>
-							<CircleButton to="https://bsky.app/profile/worldwidepixel.ca"><Bird /></CircleButton>
-							<CircleButton to="https://modrinth.com/user/worldwidepixel"><Box /></CircleButton>
+							<CircleButton label="WorldWidePixel on GitHub" to="https://github.com/worldwidepixel"
+								><Github className="p-0.5" /></CircleButton
+							>
+							<CircleButton label="WorldWidePixel on YouTube" to="https://www.youtube.com/@worldwidepixel"
+								><Youtube className="p-0.5" /></CircleButton
+							>
+							<CircleButton
+								label="WorldWidePixel on Bluesky"
+								to="https://bsky.app/profile/worldwidepixel.ca"
+								><Bluesky className="p-0.5" /></CircleButton
+							>
+							<CircleButton
+								label="WorldWidePixel on Modrinth"
+								to="https://modrinth.com/user/worldwidepixel"
+								><Modrinth className="p-0.5" /></CircleButton
+							>
 						</div>
 					</div>
 					<div class="flex flex-col gap-2 p-6">
 						<span class="font-bold">Interact</span>
-						<Link external={true} to="https://bsky.app/profile/worldwidepixel.ca"><Bird />Bluesky</Link>
-						<Link external={true} to="https://github.com/worldwidepixel"><Github />Github</Link>
+						<Link external={true} to="https://bsky.app/profile/worldwidepixel.ca"
+							><Bluesky className="p-0.5" />Bluesky</Link
+						>
+						<Link external={true} to="https://github.com/worldwidepixel"
+							><Github className="p-0.5" />Github</Link
+						>
 					</div>
 					<div class="flex flex-col gap-2 p-6">
 						<span class="font-bold">About</span>

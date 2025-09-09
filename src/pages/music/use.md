@@ -11,7 +11,7 @@ way)
 
 The details are pretty simple:
 
-- You must provide attribution to me (WorldWidePixel)
+- You must provide attribution to me (cordova)
 - You may not reupload my music verbatim
 - You may use my music under the fair use doctrine, including but not limited to the following:
     - Using my music in videos or streams

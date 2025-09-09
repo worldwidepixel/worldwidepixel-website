@@ -4,7 +4,7 @@ import PixelWordmark from "../components/PixelWordmark.astro";
 import PixelLogo from "../components/PixelLogo.astro";
 import PixelIconButton from "../components/PixelIconButton.astro";
 
-import { Bird, Box, Github, PlayCircle, Twitch } from "lucide-astro";
+import { Youtube, Twitch, Github, Modrinth, Bluesky } from "simple-icons-astro";
 ---
 
 <script type="module" lang="ts">
@@ -26,7 +26,7 @@ import { Bird, Box, Github, PlayCircle, Twitch } from "lucide-astro";
 			<span class="text-4xl font-bold">Quick Links</span>
 			<div class="flex flex-row flex-wrap gap-4">
 				<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
-					<PlayCircle />
+					<Youtube />
 				</PixelIconButton>
 				<PixelIconButton external={true} to="https://www.github.com/worldwidepixel" text="GitHub">
 					<Github />
@@ -35,10 +35,10 @@ import { Bird, Box, Github, PlayCircle, Twitch } from "lucide-astro";
 					<Twitch />
 				</PixelIconButton>
 				<PixelIconButton external={true} to="https://modrinth.com/user/worldwidepixel" text="Modrinth">
-					<Box />
+					<Modrinth />
 				</PixelIconButton>
 				<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
-					<Bird />
+					<Bluesky />
 				</PixelIconButton>
 			</div>
 		</div>
