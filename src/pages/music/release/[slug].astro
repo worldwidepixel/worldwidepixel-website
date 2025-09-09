@@ -41,6 +41,7 @@ const linksHaveBandcamp = entry.data.links.filter((link: Link) => link.name.toLo
 
 async function getBandcampEmbedData() {
 	const bcUrl = entry.data.links.find((link: Link) => link.name.toLowerCase() === "bandcamp");
+	if (bcUrl == null) return;
 	const bcResponse = await fetch(bcUrl.to);
 	const bcText = await bcResponse.text();
 	const albumIdRegex = /(?<=<!-- (album|track) id )(.*)(?= -->)/;

@@ -30,4 +30,4 @@ Something to feel Joy about.
 
 **Douglas** is my favourite song from this project. It's meant to return to that theme of utter joy- and nostalgia.
 
-**Regina** was originally made for ModFest 1.21, decided it would work better here. I'm happy I made that decision.
+**Regina** was originally made for ModFest 1.21, but I decided it would work better here. I'm happy I made that decision.
