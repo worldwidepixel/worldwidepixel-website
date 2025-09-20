@@ -2,7 +2,7 @@
 title: "What happens when you download a reposted mod?"
 description: "Mod reuploads, malware, and lots of .ru."
 image:
-    src: /img/reposts/banner.png
+    src: /img/blog/reposts/banner.png
 authors:
     - name: worldwidepixel
       avatar: https://github.com/worldwidepixel.png
