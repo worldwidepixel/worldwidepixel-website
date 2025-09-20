@@ -2,7 +2,7 @@
 title: "Let's talk."
 description: "Things might need to slow down for a while."
 image:
-    src: /img/generic.png
+    src: /img/blog/taking-it-slow/banner.png
 authors:
     - name: worldwidepixel
       avatar: https://github.com/worldwidepixel.png
