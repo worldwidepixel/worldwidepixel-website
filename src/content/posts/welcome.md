@@ -2,7 +2,7 @@
 title: "A new Website!"
 description: "It's been 2 years, and I finally have a new website!"
 image:
-    src: /img/welcome/banner.png
+    src: /img/blog/welcome/banner.png
 authors:
     - name: worldwidepixel
       avatar: https://github.com/worldwidepixel.png
