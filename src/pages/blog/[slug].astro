@@ -5,7 +5,7 @@ import Default from "../../layouts/Default.astro";
 export async function getStaticPaths() {
 	const blogEntries = await getCollection("posts");
 	return blogEntries.map((entry: any) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.id },
 		props: { entry },
 	}));
 }

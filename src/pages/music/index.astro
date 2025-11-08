@@ -34,7 +34,7 @@ function formatDate(input: Date) {
 				.map((music_project) => (
 					<div class="flex w-full flex-col">
 						<a
-							href={`https://lynndova.com/release/${music_project.slug}`}
+							href={`https://lynndova.com/release/${music_project.id}`}
 							class="flex w-full flex-row gap-6 rounded-3xl p-6 transition active:scale-95"
 							style={getGradientFromProject(music_project.data.colour)}>
 							<img
