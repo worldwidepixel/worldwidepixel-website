@@ -88,6 +88,10 @@
 	@apply flex flex-col items-center justify-center rounded-full p-1 hover:bg-brand-background-secondary;
 }
 
+.rendering-pixelated {
+	image-rendering: pixelated !important;
+}
+
 * {
 	scrollbar-color: #28cbd4 #041d30;
 }

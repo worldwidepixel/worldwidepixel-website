@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Default from "../../layouts/Default.astro";
 
 export async function getStaticPaths() {
@@ -17,7 +17,7 @@ const timeFormat = new Intl.DateTimeFormat("en-CA", {
 });
 
 const { entry } = Astro.props as any;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Default title={`${entry.data.title} | blog`}>

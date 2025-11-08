@@ -1,7 +1,7 @@
 ---
 import Default from "../../../layouts/Default.astro";
 import Button from "../../../components/Button.astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import colour, { type GrabbedColour } from "colorthief";
 import type { Link } from "../../../env";
 import { SEO } from "astro-seo";
@@ -9,13 +9,13 @@ import { SEO } from "astro-seo";
 export async function getStaticPaths() {
 	const musicEntries = await getCollection("music");
 	return musicEntries.map((entry: any) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.id },
 		props: { entry },
 	}));
 }
 
 const { entry } = Astro.props as any;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 function formatDate(input: Date) {
 	const format = new Intl.DateTimeFormat("en-GB", {

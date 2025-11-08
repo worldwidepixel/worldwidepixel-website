@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://worldwidepixel.ca",
 	integrations: [tailwind(), sitemap()],
+	site: "https://worldwidepixel.ca",
 });

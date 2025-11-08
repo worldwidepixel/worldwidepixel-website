@@ -5,6 +5,8 @@ import PixelLogo from "../components/PixelLogo.astro";
 import { Github, Youtube, Modrinth, Bluesky } from "simple-icons-astro";
 import "../styles/global.css";
 import CircleButton from "../components/CircleButton.astro";
+import type { Fragment } from "vue";
+import Separator from "../components/ui/Separator.astro";
 
 let { title } = Astro.props;
 if (title === "" || title === undefined) {
@@ -45,10 +47,10 @@ if (title === "" || title === undefined) {
 	</head>
 
 	<body class="flex h-dvh flex-col">
-		<nav class="flex w-full flex-row justify-center">
-			<div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 p-6 sm:justify-between">
+		<nav class="flex w-full flex-row justify-center bg-brand-background-transparent">
+			<div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 px-5 sm:justify-between">
 				<div
-					class="grid w-full select-none grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 rounded-3xl border bg-brand-background-transparent p-4 text-base font-bold shadow backdrop-blur sm:flex">
+					class="grid w-full select-none grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 p-6 text-base font-bold sm:flex">
 					<span class="col-span-2">
 						<a aria-label="WorldWidePixel Home" class="block w-fit" href="https://worldwidepixel.ca"
 							><PixelLogo className="p-0.5" /></a
@@ -60,16 +62,18 @@ if (title === "" || title === undefined) {
 					<a href="/">Home</a>
 					<a href="/projects">Projects</a>
 					<a href="/blog">Blog</a>
-					<a href="/music">Music</a>
+					<a href="https://lynndova.com">Music</a>
 				</div>
 			</div>
 		</nav>
-		<main class="flex w-full flex-auto flex-row justify-center">
-			<div class="w-full max-w-[80rem] p-6 pt-0">
+		<Separator src="separator/separator_header.png" />
+		<main class="flex w-full flex-auto flex-row justify-center py-6">
+			<div class="w-full max-w-[80rem] px-6">
 				<slot />
 			</div>
 		</main>
-		<footer class="flex w-full flex-row justify-center border-t border-brand-border-alt bg-brand-background-blue">
+		<Separator src="separator/separator_footer.png" />
+		<footer class="flex w-full flex-row justify-center bg-brand-background-blue">
 			<div class="w-full max-w-[80rem] px-6">
 				<div class="grid w-full grid-cols-1 sm:grid-cols-3">
 					<div class="flex flex-col justify-center gap-3 p-6">

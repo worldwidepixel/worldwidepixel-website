@@ -1,0 +1,7 @@
+---
+const { className = "", src = "separator/separator.png" } = Astro.props;
+---
+
+<span
+	class={`rendering-pixelated min-h-4 w-full shrink-0 bg-center bg-repeat object-fill ${className}`}
+	style={`background-image: url("/img/textures/ui/${src}")`}></span>
