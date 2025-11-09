@@ -62,14 +62,14 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 		<img
 			draggable="false"
 			style={{ borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)` }}
-			class="mx-auto block size-56 rounded-md border-[1px] shadow-2xl md:hidden"
+			class="mx-auto block size-56 rounded-md border shadow-2xl md:hidden"
 			src={entry.data.icon}
 		/>
 		<div class="grid grid-cols-1 grid-rows-[auto_auto] gap-x-6 gap-y-4 md:grid-cols-[12rem_auto]">
 			<img
 				draggable="false"
 				style={{ borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)` }}
-				class="row-start-2 hidden size-48 rounded-md border-[1px] shadow-2xl md:block"
+				class="row-start-2 hidden size-48 rounded-md border shadow-2xl md:block"
 				src={entry.data.icon}
 			/>
 			<span class="italic text-brand-text-secondary md:col-start-2">{formatDate(entry.data.date)}</span>
@@ -83,7 +83,7 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 					{
 						entry.data.links.map((link: { name: string; to: string }) => (
 							<Button
-								classList={`bg-opacity-50 bg-brand-background-secondary border-b-[1px] border-[${entry.data.colour}]`}
+								classList={`bg-opacity-50 bg-brand-background-secondary border-b border-[${entry.data.colour}]`}
 								style={{
 									borderColor: `color-mix(in oklab, ${entry.data.colour}, transparent 80%)`,
 								}}
@@ -113,7 +113,7 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 								seamless
 							/>
 						</div>
-						<p class="p-2 text-center text-xs text-slate-500 transition-colors hover:text-slate-300 [&>a]:hover:text-blue-500">
+						<p class="p-2 text-center text-xs text-slate-500 transition-colors hover:text-slate-300 hover:[&>a]:text-blue-500">
 							Embedded Bandcamp content is subject to their
 							<a
 								class="text-center text-blue-700 transition-colors"

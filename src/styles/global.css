@@ -1,101 +1,160 @@
-@import url(https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css);
-@import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,500,500i,700,700i|inter:100,200,300,400,500,600,700,800,900);
+@import url(https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css)
+layer(base);
+@import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,500,500i,700,700i|inter:100,200,300,400,500,600,700,800,900)
+layer(base);
 
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss';
 
-* {
-	@apply border-brand-border;
-}
+@theme {
+  --font-sans:
+    DM Sans, Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-.bgimg {
-	mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
-	-webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
-}
-
-.cardbg {
-	mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 75%);
-	-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 75%);
-}
-
-#gradient-canvas {
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -10;
-	--gradient-color-1: #8e80ff;
-	--gradient-color-2: #6ec3f4;
-	--gradient-color-3: #fc38ff;
-	--gradient-color-4: #b9beff;
+  --color-generic-red: #fa6f5a;
+  --color-generic-orange: #faa55a;
+  --color-generic-yellow: #fadd5a;
+  --color-generic-green: #9dfa5a;
+  --color-generic-blue: #5a95fa;
+  --color-generic-purple: #ba5afa;
+  --color-generic-rose: #fa5a87;
+  --color-brand-colour: #28cbd4;
+  --color-brand-background: #16181c;
+  --color-brand-background-secondary: #1e2127;
+  --color-brand-background-blue: #041d30;
+  --color-brand-background-transparent: #262a3180;
+  --color-brand-scrollbar: #041d30;
+  --color-brand-border: #21292c;
+  --color-brand-border-alt: #d7c8ff;
+  --color-brand-text: #ffffff;
+  --color-brand-text-secondary: #e1e1e1;
 }
 
-.brand-gradient {
-	background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-.subtext_dark a {
-	color: rgb(49, 49, 52) !important;
-}
+@layer components {
+  * {
+    @apply border-brand-border;
+  }
 
-.md h1 {
-	@apply my-6 text-3xl font-bold;
-}
-.md h2 {
-	@apply my-4 text-2xl font-bold;
-}
-.md h3 {
-	@apply mb-4 text-xl font-bold;
-}
-.md img {
-	@apply my-2 inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg;
-}
-.md p {
-	@apply my-4;
-}
-.md strong {
-	@apply font-bold;
-}
-.md li {
-	@apply mb-2 ml-8 list-disc;
-}
+  .bgimg {
+    mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  }
 
-.md a {
-	@apply text-blue-400 underline;
-}
+  .cardbg {
+    mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 75%
+    );
+    -webkit-mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 75%
+    );
+  }
 
-.centre {
-	@apply flex flex-col items-center justify-center gap-2;
-}
+  #gradient-canvas {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    --gradient-color-1: #8e80ff;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #fc38ff;
+    --gradient-color-4: #b9beff;
+  }
 
-::-webkit-scrollbar {
-	width: 1rem;
-}
+  .brand-gradient {
+    background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 
-.lucide {
-	@apply h-5 w-5;
-}
+  .subtext_dark a {
+    color: rgb(49, 49, 52) !important;
+  }
 
-.button {
-	@apply rounded-xl bg-brand-colour px-4 py-3 text-lg font-bold transition active:scale-95;
-}
+  .md h1 {
+    @apply my-6 text-3xl font-bold;
+  }
+  .md h2 {
+    @apply my-4 text-2xl font-bold;
+  }
+  .md h3 {
+    @apply mb-4 text-xl font-bold;
+  }
+  .md img {
+    @apply my-2 inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg;
+  }
+  .md p {
+    @apply my-4;
+  }
+  .md strong {
+    @apply font-bold;
+  }
+  .md li {
+    @apply mb-2 ml-8 list-disc;
+  }
 
-.circlebutton {
-	@apply flex flex-col items-center justify-center rounded-full p-1 hover:bg-brand-background-secondary;
-}
+  .md a {
+    @apply text-blue-400 underline;
+  }
 
-.rendering-pixelated {
-	image-rendering: pixelated;
-	image-rendering: -moz-crisp-edges;
-	image-rendering: crisp-edges;
-}
+  .centre {
+    @apply flex flex-col items-center justify-center gap-2;
+  }
 
-* {
-	scrollbar-color: #28cbd4 #041d30;
-}
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
 
-@tailwind utilities;
+  .lucide {
+    @apply h-5 w-5;
+  }
+
+  .button {
+    @apply rounded-xl bg-brand-colour px-4 py-3 text-lg font-bold transition active:scale-95;
+  }
+
+  .circlebutton {
+    @apply flex flex-col items-center justify-center rounded-full p-1 hover:bg-brand-background-secondary;
+  }
+
+  .rendering-pixelated {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  * {
+    scrollbar-color: #28cbd4 #041d30;
+  }
+}

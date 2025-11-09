@@ -47,7 +47,7 @@ if (title === "" || title === undefined) {
 
 	<body class="flex h-dvh flex-col">
 		<nav class="flex w-full flex-row justify-center bg-brand-background-transparent">
-			<div class="flex w-full max-w-[80rem] flex-row items-center justify-center gap-4 px-5 sm:justify-between">
+			<div class="flex w-full max-w-7xl flex-row items-center justify-center gap-4 px-5 sm:justify-between">
 				<div
 					class="grid w-full select-none grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 p-6 text-base font-bold sm:flex">
 					<span class="col-span-2">
@@ -67,13 +67,13 @@ if (title === "" || title === undefined) {
 		</nav>
 		<Separator src="separator/separator_header.png" />
 		<main class="flex w-full flex-auto flex-row justify-center py-6">
-			<div class="w-full max-w-[80rem] px-6">
+			<div class="w-full max-w-7xl px-6">
 				<slot />
 			</div>
 		</main>
 		<Separator src="separator/separator_footer.png" />
 		<footer class="flex w-full flex-row justify-center bg-brand-background-blue">
-			<div class="w-full max-w-[80rem] px-6">
+			<div class="w-full max-w-7xl px-6">
 				<div class="grid w-full grid-cols-1 sm:grid-cols-3">
 					<div class="flex flex-col justify-center gap-3 p-6">
 						<a
