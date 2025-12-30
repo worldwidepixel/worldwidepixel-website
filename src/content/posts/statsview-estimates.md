@@ -22,3 +22,5 @@ Essentially, I designed the calculations behind it in late 202**4** based on est
 Thus, I've decided to remove it.
 
 Thank you for using StatsView! <3 lynn
+
+<img alt="Screenshot of total revenue formula. const all_revenue = total_90_10_paid * 1.125 + total_25_75_paid * 1.25" src="/img/blog/statsview-estimates/image.png" />
