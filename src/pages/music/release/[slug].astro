@@ -1,5 +1,5 @@
 ---
-import Default from "../../../layouts/Default.astro";
+import WrappedDefault from "../../../layouts/WrappedDefault.astro";
 import Button from "../../../components/Button.astro";
 import { getCollection, render } from "astro:content";
 import colour, { type GrabbedColour } from "colorthief";
@@ -56,7 +56,7 @@ async function getBandcampEmbedData() {
 const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 ---
 
-<Default title={entry.data.title}>
+<WrappedDefault title={entry.data.title}>
 	<SEO title={`${entry.data.title} - worldwidepixel`} description={entry.data.summary} />
 	<div class="flex flex-col gap-8 py-16 text-sm">
 		<img
@@ -72,7 +72,7 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 				class="row-start-2 hidden size-48 rounded-md border shadow-2xl md:block"
 				src={entry.data.icon}
 			/>
-			<span class="italic text-brand-text-secondary md:col-start-2">{formatDate(entry.data.date)}</span>
+			<span class="text-brand-text-secondary italic md:col-start-2">{formatDate(entry.data.date)}</span>
 
 			<div class="flex flex-col gap-4">
 				<span class="text-6xl font-bold">{entry.data.title}</span>
@@ -105,7 +105,7 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 			{
 				linksHaveBandcamp && bcData && (
 					<div class="flex w-fit flex-col gap-1">
-						<div class="w-fit rounded-3xl border bg-brand-background-secondary p-2">
+						<div class="bg-brand-background-secondary w-fit rounded-3xl border p-2">
 							<iframe
 								class="rounded-2xl"
 								style="border: 0; width: 350px; height: 654px;"
@@ -132,6 +132,6 @@ const bcData = linksHaveBandcamp ? await getBandcampEmbedData() : null;
 	<div
 		style={`background: ${getGradient(gradient, mainColour)};
 `}
-		class="bgimg pointer-events-none absolute left-0 top-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-35 blur-2xl saturate-200">
+		class="bgimg pointer-events-none absolute top-0 left-0 z-[-2] h-[75%] w-full overflow-hidden object-cover opacity-35 blur-2xl saturate-200">
 	</div>
-</Default>
+</WrappedDefault>

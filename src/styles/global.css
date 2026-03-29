@@ -1,160 +1,196 @@
-@import url(https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css)
-layer(base);
+@import url(https://cdn.jsdelivr.net/npm/@intergrav/fonts@1/serve/inter.min.css) layer(base);
 @import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,500,500i,700,700i|inter:100,200,300,400,500,600,700,800,900)
 layer(base);
 
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --font-sans:
-    DM Sans, Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	--font-sans:
+		DM Sans, Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
 
-  --color-generic-red: #fa6f5a;
-  --color-generic-orange: #faa55a;
-  --color-generic-yellow: #fadd5a;
-  --color-generic-green: #9dfa5a;
-  --color-generic-blue: #5a95fa;
-  --color-generic-purple: #ba5afa;
-  --color-generic-rose: #fa5a87;
-  --color-brand-colour: #28cbd4;
-  --color-brand-background: #16181c;
-  --color-brand-background-secondary: #1e2127;
-  --color-brand-background-blue: #041d30;
-  --color-brand-background-transparent: #262a3180;
-  --color-brand-scrollbar: #041d30;
-  --color-brand-border: #21292c;
-  --color-brand-border-alt: #d7c8ff;
-  --color-brand-text: #ffffff;
-  --color-brand-text-secondary: #e1e1e1;
-}
+	--color-dova-red-1: #bf2846;
+	--color-dova-red-2: #b72646;
+	--color-dova-red-3: #af2447;
+	--color-dova-red-4: #a82348;
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+	--color-dova-orange-1: #e57a30;
+	--color-dova-orange-2: #d66626;
+	--color-dova-orange-3: #c9541c;
+	--color-dova-orange-4: #ba4212;
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+	--color-dova-yellow-1: #f2c232;
+	--color-dova-yellow-2: #e5ac2b;
+	--color-dova-yellow-3: #d39115;
+	--color-dova-yellow-4: #bf7609;
+
+	--color-dova-lime-1: #70c869;
+	--color-dova-lime-2: #60b555;
+	--color-dova-lime-3: #51a341;
+	--color-dova-lime-4: #499634;
+
+	--color-dova-green-1: #1c9369;
+	--color-dova-green-2: #1b896a;
+	--color-dova-green-3: #197f6b;
+	--color-dova-green-4: #167266;
+
+	--color-dova-teal-1: #1e9aa0;
+	--color-dova-teal-2: #178f91;
+	--color-dova-teal-3: #138985;
+	--color-dova-teal-4: #0e7f77;
+
+	--color-dova-blue-1: #5378bc;
+	--color-dova-blue-2: #506cb7;
+	--color-dova-blue-3: #4c61ad;
+	--color-dova-blue-4: #4856a5;
+
+	--color-dova-purple-1: #9c78bc;
+	--color-dova-purple-2: #8b68ad;
+	--color-dova-purple-3: #815da3;
+	--color-dova-purple-4: #734e96;
+
+	--color-dova-pink-1: #da78bc;
+	--color-dova-pink-2: #c961ac;
+	--color-dova-pink-3: #b6509d;
+	--color-dova-pink-4: #a64492;
+
+	--color-dova-black-1: #242528;
+	--color-dova-black-2: #1d1e21;
+	--color-dova-black-3: #151619;
+	--color-dova-black-4: #0e0f11;
+	--color-dova-black-5: #030405;
+
+	--color-dova-white-1: #f5f6f6;
+	--color-dova-white-2: #e6f0f1;
+	--color-dova-white-3: #d4e6e6;
+	--color-dova-white-4: #afd1d3;
+
+	--color-dova-brand: #28cbd4;
+	--color-dova-brand-alt: #d7c8ff;
+
+	--color-brand-background: var(--color-dova-black-4);
+	--color-brand-background-secondary: var(--color-dova-black-3);
+	--color-brand-background-blue: #041d30;
+	--color-brand-border: var(--color-dova-black-2);
+	--color-brand-border-alt: var(--color-dova-brand-alt);
+	--color-brand-text: #ffffff;
+	--color-brand-text-secondary: #f6f5fa;
+
+	--drop-shadow-dova: -8px 8px 0px var(--color-dova-black-3);
+
+	--scale-xs: 16px;
+	--scale-sm: 32px;
+	--scale-md: 64px;
+	--scale-lg: 128px;
+	--scale-xl: 256px;
 }
 
 @layer components {
-  * {
-    @apply border-brand-border;
-  }
+	* {
+		@apply border-brand-border;
+		scrollbar-color: var(--color-dova-brand) var(--color-brand-background-secondary);
+	}
 
-  .bgimg {
-    mask-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
-  }
+	.button {
+		@apply bg-dova-brand rounded-xl px-4 py-3 text-lg font-bold transition active:scale-95;
+	}
 
-  .cardbg {
-    mask-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 75%
-    );
-    -webkit-mask-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 75%
-    );
-  }
+	.button-circle {
+		@apply hover:bg-brand-background-secondary flex flex-col items-center justify-center rounded-full p-1;
+	}
 
-  #gradient-canvas {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    --gradient-color-1: #8e80ff;
-    --gradient-color-2: #6ec3f4;
-    --gradient-color-3: #fc38ff;
-    --gradient-color-4: #b9beff;
-  }
+	.button-shadow-dova {
+		--minus-eight-pixels: -8px;
+		@apply drop-shadow-dova drop-shadow-dova-black-4 active:translate-x-(--minus-eight-pixels) active:translate-y-2 active:drop-shadow-none;
+	}
 
-  .brand-gradient {
-    background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
+	h1:not(.md h1) {
+		@apply text-brand-text my-2 text-4xl font-black tracking-tighter sm:text-6xl;
+	}
 
-  .subtext_dark a {
-    color: rgb(49, 49, 52) !important;
-  }
+	h2:not(.md h2) {
+		@apply text-brand-text my-1 text-4xl font-black tracking-tight;
+	}
 
-  .md h1 {
-    @apply my-6 text-3xl font-bold;
-  }
-  .md h2 {
-    @apply my-4 text-2xl font-bold;
-  }
-  .md h3 {
-    @apply mb-4 text-xl font-bold;
-  }
-  .md img {
-    @apply my-2 inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg;
-  }
-  .md p {
-    @apply my-4;
-  }
-  .md strong {
-    @apply font-bold;
-  }
-  .md li {
-    @apply mb-2 ml-8 list-disc;
-  }
+	h3:not(.md h3) {
+		@apply text-brand-text my-1 text-3xl font-extrabold tracking-tight;
+	}
 
-  .md a {
-    @apply text-blue-400 underline;
-  }
+	.bgimg {
+		mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+		-webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+	}
 
-  .centre {
-    @apply flex flex-col items-center justify-center gap-2;
-  }
+	.cardbg {
+		mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 75%);
+		-webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 75%);
+	}
 
-  ::-webkit-scrollbar {
-    width: 1rem;
-  }
+	#gradient-canvas {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -10;
+		--gradient-color-1: #8e80ff;
+		--gradient-color-2: #6ec3f4;
+		--gradient-color-3: #fc38ff;
+		--gradient-color-4: #b9beff;
+	}
 
-  .lucide {
-    @apply h-5 w-5;
-  }
+	.brand-gradient {
+		background: linear-gradient(90deg, #baa5ff 0%, #85b7f6 100%);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
 
-  .button {
-    @apply rounded-xl bg-brand-colour px-4 py-3 text-lg font-bold transition active:scale-95;
-  }
+	.subtext_dark a {
+		color: rgb(49, 49, 52) !important;
+	}
 
-  .circlebutton {
-    @apply flex flex-col items-center justify-center rounded-full p-1 hover:bg-brand-background-secondary;
-  }
+	.md h1 {
+		@apply my-6 text-3xl font-bold;
+	}
+	.md h2 {
+		@apply my-4 text-2xl font-bold;
+	}
+	.md h3 {
+		@apply mb-4 text-xl font-bold;
+	}
+	.md img {
+		@apply my-2 inline-block h-auto w-fit max-w-full rounded-3xl shadow-lg;
+	}
+	.md p {
+		@apply my-4;
+	}
+	.md strong {
+		@apply font-bold;
+	}
+	.md li {
+		@apply mb-2 ml-8 list-disc;
+	}
 
-  .rendering-pixelated {
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-  }
+	.md a {
+		@apply text-blue-400 underline;
+	}
 
-  * {
-    scrollbar-color: #28cbd4 #041d30;
-  }
+	.centre {
+		@apply flex flex-col items-center justify-center gap-2;
+	}
+
+	::-webkit-scrollbar {
+		width: 1rem;
+	}
+
+	.lucide {
+		@apply h-5 w-5;
+	}
+
+	.rendering-pixelated {
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: crisp-edges;
+	}
 }

@@ -1,6 +1,6 @@
 ---
 import Button from "../components/Button.astro";
-import Default from "../layouts/Default.astro";
+import WrappedDefault from "../layouts/WrappedDefault.astro";
 import projects from "../data/projects.json";
 
 function getGradientFromProject(colour: string) {
@@ -8,9 +8,9 @@ function getGradientFromProject(colour: string) {
 }
 ---
 
-<Default title="projects">
+<WrappedDefault title="projects">
 	<div class="flex flex-col gap-4 py-16 text-sm">
-		<span class="text-6xl font-bold">My current <span class="brand-gradient">projects</span>.</span>
+		<h1>My current <span class="brand-gradient">projects</span>.</h1>
 		(and orgs)
 	</div>
 	<div class="flex flex-col justify-center gap-4">
@@ -20,10 +20,10 @@ function getGradientFromProject(colour: string) {
 					<div
 						class="flex w-full flex-col gap-3 rounded-3xl p-6"
 						style={getGradientFromProject(project.colour)}>
-						<span class="flex flex-row items-center gap-4 text-4xl font-bold">
+						<h2 class="flex flex-row items-center gap-4">
 							<img class="h-10 w-10 rounded-xl bg-white p-0.5" src={project.icon} />
 							{project.name}
-						</span>
+						</h2>
 						<span class="flex flex-col gap-2">
 							{project.description.map((paragraph: any) => (
 								<span>{paragraph}</span>
@@ -49,4 +49,4 @@ function getGradientFromProject(colour: string) {
 			))
 		}
 	</div>
-</Default>
+</WrappedDefault>

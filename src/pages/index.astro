@@ -8,29 +8,53 @@ import { Youtube, Twitch, Github, Modrinth, Bluesky } from "simple-icons-astro";
 ---
 
 <Default title="home">
-	<div class="flex h-full flex-col justify-center gap-2">
-		<div class="flex w-full flex-col gap-6 p-6 sm:p-12">
-			<PixelWordmark />
-			<span class="flex flex-row items-center gap-4 text-2xl text-brand-text-secondary">
-				I make things. On the internet. <PixelLogo className="p-1" />
-			</span>
-			<span class="text-4xl font-bold">Quick Links</span>
-			<div class="flex flex-row flex-wrap gap-4">
-				<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
-					<Youtube />
-				</PixelIconButton>
-				<PixelIconButton external={true} to="https://www.github.com/worldwidepixel" text="GitHub">
-					<Github />
-				</PixelIconButton>
-				<PixelIconButton external={true} to="https://www.twitch.tv/worldwidepixel" text="Twitch">
-					<Twitch />
-				</PixelIconButton>
-				<PixelIconButton external={true} to="https://modrinth.com/user/worldwidepixel" text="Modrinth">
-					<Modrinth />
-				</PixelIconButton>
-				<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
-					<Bluesky />
-				</PixelIconButton>
+	<div
+		class="rendering-pixelated flex w-full flex-row justify-center bg-[url(/img/textures/ui/background/home_hero_background_tile.png)] bg-size-(--scale-xl) bg-center bg-repeat object-fill">
+		<div class="w-full max-w-7xl px-6">
+			<div class="flex h-full flex-col justify-center">
+				<div class="bg-dova-blue-4 grid grid-cols-3 items-center gap-4 border border-b-0 p-2">
+					<span></span>
+					<span class="flex flex-row items-center justify-center font-bold select-none" aria-hidden
+						>lynn.exe</span
+					>
+					<span class="mb-2 ml-2 flex flex-row items-center justify-end gap-3">
+						<span
+							class="bg-dova-green-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+						<span
+							class="bg-dova-yellow-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+						<span
+							class="bg-dova-red-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+
+						{/* lots of span-ception here, these are just for show*/}
+					</span>
+				</div>
+				<div class="bg-dova-black-5/60 flex w-full flex-col gap-6 border p-6 backdrop-blur-2xl sm:p-12">
+					<PixelWordmark />
+					<span class="text-brand-text-secondary flex flex-row items-center gap-4 text-2xl">
+						I make things. On the internet. <PixelLogo className="p-1" />
+					</span>
+					<span class="text-4xl font-bold">Quick Links</span>
+					<div class="flex flex-row flex-wrap gap-4">
+						<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
+							<Youtube />
+						</PixelIconButton>
+						<PixelIconButton external={true} to="https://www.github.com/worldwidepixel" text="GitHub">
+							<Github />
+						</PixelIconButton>
+						<PixelIconButton external={true} to="https://www.twitch.tv/worldwidepixel" text="Twitch">
+							<Twitch />
+						</PixelIconButton>
+						<PixelIconButton external={true} to="https://modrinth.com/user/worldwidepixel" text="Modrinth">
+							<Modrinth />
+						</PixelIconButton>
+						<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
+							<Bluesky />
+						</PixelIconButton>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

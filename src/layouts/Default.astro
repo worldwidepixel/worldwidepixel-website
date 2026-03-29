@@ -16,7 +16,7 @@ if (title === "" || title === undefined) {
 ---
 
 <!doctype html>
-<html lang="en" class="h-full bg-brand-background text-brand-text">
+<html lang="en" class="bg-brand-background text-brand-text h-full">
 	<head>
 		<title>{title}</title>
 		<meta charset="utf-8" />
@@ -46,10 +46,10 @@ if (title === "" || title === undefined) {
 	</head>
 
 	<body class="flex h-dvh flex-col">
-		<nav class="flex w-full flex-row justify-center bg-brand-background-transparent">
+		<nav class="bg-dova-black-2 flex w-full flex-row justify-center">
 			<div class="flex w-full max-w-7xl flex-row items-center justify-center gap-4 px-5 sm:justify-between">
 				<div
-					class="grid w-full select-none grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 p-6 text-base font-bold sm:flex">
+					class="grid w-full grid-cols-2 flex-row items-center justify-center gap-x-12 gap-y-4 p-6 text-base font-bold select-none sm:flex">
 					<span class="col-span-2">
 						<a aria-label="WorldWidePixel Home" class="block w-fit" href="https://worldwidepixel.ca"
 							><PixelLogo className="p-0.5" /></a
@@ -66,13 +66,11 @@ if (title === "" || title === undefined) {
 			</div>
 		</nav>
 		<Separator src="separator/separator_header.png" />
-		<main class="flex w-full flex-auto flex-row justify-center py-6">
-			<div class="w-full max-w-7xl px-6">
-				<slot />
-			</div>
+		<main class="flex flex-auto">
+			<slot />
 		</main>
 		<Separator src="separator/separator_footer.png" />
-		<footer class="flex w-full flex-row justify-center bg-brand-background-blue">
+		<footer class="bg-brand-background-blue flex w-full flex-row justify-center">
 			<div class="w-full max-w-7xl px-6">
 				<div class="grid w-full grid-cols-1 sm:grid-cols-3">
 					<div class="flex flex-col justify-center gap-3 p-6">

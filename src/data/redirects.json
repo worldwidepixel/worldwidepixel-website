@@ -16,10 +16,6 @@
 		"out": "https://modrinth.com/resourcepack/pixelpack"
 	},
 	{
-		"in": "wrapped",
-		"out": "https://wrapped.worldwidepixel.ca"
-	},
-	{
 		"in": "spirit",
 		"out": "https://spiritstudios.dev"
 	},
@@ -33,15 +29,15 @@
 	},
 	{
 		"in": "wildflower",
-		"out": "https://worldwidepixel.bandcamp.com/album/wildflower"
+		"out": "https://lynndova.bandcamp.com/album/wildflower"
 	},
 	{
 		"in": "flare",
-		"out": "https://worldwidepixel.bandcamp.com/album/flare"
+		"out": "https://lynndova.bandcamp.com/album/flare"
 	},
 	{
 		"in": "joy",
-		"out": "https://worldwidepixel.bandcamp.com/album/joy"
+		"out": "https://lynndova.bandcamp.com/album/joy"
 	},
 	{
 		"in": "mf121",
@@ -53,7 +49,15 @@
 	},
 	{
 		"in": "366",
-		"out": "https://worldwidepixel.bandcamp.com/album/366"
+		"out": "https://lynndova.bandcamp.com/album/366"
+	},
+	{
+		"in": "toybox",
+		"out": "https://modfest.bandcamp.com/album/modfest-toybox-original-modpack-soundtrack"
+	},
+	{
+		"in": "abysm",
+		"out": "https://lynndova.bandcamp.com/album/abysm"
 	},
 	{
 		"in": "cantilever",

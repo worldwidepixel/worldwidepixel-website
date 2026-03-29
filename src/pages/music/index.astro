@@ -1,6 +1,6 @@
 ---
-import Default from "../../layouts/Default.astro";
-import { ArrowDown } from "lucide-astro";
+import WrappedDefault from "../../layouts/WrappedDefault.astro";
+import { ArrowDown } from "@lucide/astro";
 import { getCollection } from "astro:content";
 
 const music = await getCollection("music");
@@ -17,46 +17,16 @@ function formatDate(input: Date) {
 }
 ---
 
-<Default title="music">
-	<div class="flex flex-col gap-4 py-16 text-sm">
-		<span class="text-6xl font-bold">I make <span class="brand-gradient">music</span>.</span>
-		For over a year, I've been producing music on various corners of the Internet. Enjoy!
-		<a class="w-fit underline" href="/music/use">Interested in using my music? See how here.</a>
-		<span class="flex flex-row items-center gap-2 text-2xl underline decoration-brand-colour decoration-wavy"
-			>All of my music<ArrowDown /></span
-		>
-	</div>
-	<div class="flex flex-col justify-center gap-4">
-		{
-			music
-				.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
-				.reverse()
-				.map((music_project) => (
-					<div class="flex w-full flex-col">
-						<a
-							href={`https://lynndova.com/release/${music_project.id}`}
-							class="flex w-full flex-row gap-6 rounded-3xl p-6 transition active:scale-95"
-							style={getGradientFromProject(music_project.data.colour)}>
-							<img
-								draggable="false"
-								class="h-20 w-20 bg-white shadow-2xl sm:h-44 sm:w-44"
-								src={music_project.data.icon}
-							/>
-							<div class="flex flex-col justify-center gap-3">
-								<span class="flex flex-row items-center gap-4 text-4xl font-bold">
-									{music_project.data.title}
-								</span>
-								<span class="flex flex-col gap-2">
-									<span> {music_project.data.summary}</span>
-								</span>
-								<hr class="border-brand-text-secondary opacity-25" />
-								<span class="text-brand-text-secondary">
-									released {formatDate(music_project.data.date)}
-								</span>
-							</div>
-						</a>
-					</div>
-				))
-		}
-	</div>
-</Default>
+<script is:inline>
+	const params = new URLSearchParams(window.location.search);
+	const inKey = params.get("to");
+
+	let outPath = "https://lynndova.com/";
+	outPath = blogSearch.length !== 0 ? `/blog/${blogSearch[0].slug}` : outPath;
+
+	window.location.replace(outPath);
+</script>
+
+<WrappedDefault title="music">
+	<span class="h-full"> Redirecting to lynndova.com... </span>
+</WrappedDefault>
