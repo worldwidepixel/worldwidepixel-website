@@ -38,22 +38,20 @@ import { Youtube, Twitch, Github, Modrinth, Bluesky } from "simple-icons-astro";
 					<span class="text-brand-text-secondary flex flex-row items-center gap-4 text-2xl">
 						I make things. On the internet. <PixelLogo className="p-1" />
 					</span>
-					<span class="text-4xl font-bold">Quick Links</span>
+					<h2>Quick Links</h2>
 					<div class="flex flex-row flex-wrap gap-4">
-						<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
-							<Youtube />
+						<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
+							<Bluesky />
 						</PixelIconButton>
 						<PixelIconButton external={true} to="https://www.github.com/worldwidepixel" text="GitHub">
 							<Github />
 						</PixelIconButton>
-						<PixelIconButton external={true} to="https://www.twitch.tv/worldwidepixel" text="Twitch">
-							<Twitch />
-						</PixelIconButton>
 						<PixelIconButton external={true} to="https://modrinth.com/user/worldwidepixel" text="Modrinth">
 							<Modrinth />
 						</PixelIconButton>
-						<PixelIconButton external={true} to="https://bsky.app/profile/worldwidepixel.ca" text="Bluesky">
-							<Bluesky />
+
+						<PixelIconButton external={true} to="https://youtube.com/@worldwidepixel" text="YouTube">
+							<Youtube />
 						</PixelIconButton>
 					</div>
 				</div>

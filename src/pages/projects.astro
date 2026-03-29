@@ -13,7 +13,7 @@ function getGradientFromProject(colour: string) {
 <Default title="projects">
 	<div class="flex h-full w-full flex-col">
 		<div
-			class="rendering-pixelated bg-[url(/img/textures/ui/background/projects_background_tile.png)] bg-size-(--scale-xl) bg-center bg-repeat object-fill">
+			class="rendering-pixelated bg-[url(/img/textures/ui/background/projects_hero_background_tile.png)] bg-size-(--scale-xl) bg-center bg-repeat object-fill">
 			<PageWrapper>
 				<div class="flex flex-col gap-4 py-16 text-sm">
 					<h1>
@@ -29,8 +29,9 @@ function getGradientFromProject(colour: string) {
 			</PageWrapper>
 		</div>
 		<Separator />
-		<PageWrapper>
-			<div class="drop-shadow-dova mb-2 ml-2 border">
+		<div
+			class="rendering-pixelated h-full bg-[url(/img/textures/ui/background/projects_background_tile.png)] bg-size-(--scale-lg) bg-center bg-repeat object-fill">
+			<PageWrapper>
 				<div class="bg-dova-blue-4 grid grid-cols-2 items-center gap-4 p-2 sm:grid-cols-3">
 					<span
 						class="flex flex-row items-center font-bold select-none sm:col-start-2 sm:justify-center"
@@ -88,7 +89,7 @@ function getGradientFromProject(colour: string) {
 						))
 					}
 				</div>
-			</div>
-		</PageWrapper>
+			</PageWrapper>
+		</div>
 	</div>
 </Default>
