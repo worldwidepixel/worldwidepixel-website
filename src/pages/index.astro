@@ -18,9 +18,11 @@ import { Youtube, Twitch, Github, Modrinth, Bluesky } from "simple-icons-astro";
 						>lynn.exe</span
 					>
 					<span class="flex flex-row items-center justify-end gap-3">
-						<span
+						<button
+							aria-label="Toggle fullscreen"
+							id="home-fullscreen"
 							class="bg-dova-green-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
-						></span>
+						></button>
 						<span
 							class="bg-dova-yellow-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
 						></span>
@@ -59,3 +61,18 @@ import { Youtube, Twitch, Github, Modrinth, Bluesky } from "simple-icons-astro";
 		</div>
 	</div>
 </Default>
+
+<script is:inline>
+	const fullscreenButton = document.getElementById("home-fullscreen");
+	const documentElement = document.documentElement;
+
+	fullscreenButton.addEventListener("click", () => {
+		if (document.fullscreenElement) {
+			document.exitFullscreen();
+			return;
+		}
+		documentElement.requestFullscreen().catch((err) => {
+			console.log("Failed to initialise fullscreen");
+		});
+	});
+</script>
