@@ -67,6 +67,8 @@ layer(base);
 
 	--color-dova-brand: #28cbd4;
 	--color-dova-brand-alt: #d7c8ff;
+	--color-dova-gradient-start: #baa5ff;
+	--color-dova-gradient-end: #85b7f6;
 
 	--color-brand-background: var(--color-dova-black-4);
 	--color-brand-background-secondary: var(--color-dova-black-3);
@@ -100,8 +102,7 @@ layer(base);
 	}
 
 	.button-shadow-dova {
-		--minus-eight-pixels: -8px;
-		@apply drop-shadow-dova drop-shadow-dova-black-4 mb-2 ml-2 active:translate-x-(--minus-eight-pixels) active:translate-y-2 active:drop-shadow-none;
+		@apply drop-shadow-dova drop-shadow-dova-black-4 mb-2 ml-2 active:-translate-x-2 active:translate-y-2 active:drop-shadow-none;
 	}
 
 	h1:not(.md h1) {
@@ -144,6 +145,10 @@ layer(base);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
 		background-clip: text;
+	}
+
+	.bg-brand-gradient {
+		background: linear-gradient(90deg, var(--color-dova-gradient-start) 0%, var(--color-dova-gradient-end) 100%);
 	}
 
 	.subtext_dark a {

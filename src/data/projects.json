@@ -1,8 +1,24 @@
 [
 	{
+		"name": "Abysm",
+		"icon": "https://raw.githubusercontent.com/SpiritGameStudios/Abysm/refs/heads/main/src/main/resources/assets/abysm/icon.png",
+		"colour": "#112ca4",
+		"description": ["Something stirs in the depths. Its call demands an answer."],
+		"links": [
+			{
+				"name": "Modrinth",
+				"to": "https://modrinth.com/mod/abysm"
+			},
+			{
+				"name": "Github",
+				"to": "https://github.com/SpiritGameStudios/abysm"
+			}
+		]
+	},
+	{
 		"name": "Badger",
 		"icon": "https://badger.worldwidepixel.ca/img/badger.png",
-		"colour": "#041d30",
+		"colour": "#ff0066",
 		"description": ["A badge generator for the web."],
 		"links": [
 			{
@@ -14,7 +30,7 @@
 	{
 		"name": "blueRinth",
 		"icon": "https://raw.githubusercontent.com/worldwidepixel/blueRinth/main/img/icon.png",
-		"colour": "#041d30",
+		"colour": "#047eff",
 		"description": ["Change the colour of Modrinth."],
 		"links": [
 			{
@@ -26,7 +42,7 @@
 	{
 		"name": "Bombastic",
 		"icon": "https://cdn.modrinth.com/data/4PhSSMsR/ec2f60f2a686e7c83ef5d366f817c8f53c92f087.png",
-		"colour": "#041d30",
+		"colour": "#ff2e2e",
 		"description": ["Sending you pipe bombs since 2024."],
 		"links": [
 			{
@@ -35,14 +51,14 @@
 			},
 			{
 				"name": "Github",
-				"to": "https://github.com/callmeechocodes/bombastic"
+				"to": "https://github.com/SpiritGameStudios/Bombastic"
 			}
 		]
 	},
 	{
 		"name": "Cantilever",
 		"icon": "https://raw.githubusercontent.com/SpiritGameStudios/Cantilever/refs/heads/main/src/main/resources/assets/cantilever/icon.png",
-		"colour": "#041d30",
+		"colour": "#0d8ba3",
 		"description": ["A no-nonsense Minecraft ↔ Discord bridge."],
 		"links": [
 			{
@@ -58,7 +74,7 @@
 	{
 		"name": "Hollow",
 		"icon": "https://raw.githubusercontent.com/CallMeEchoCodes/Hollow/main/src/main/resources/assets/hollow/icon.png",
-		"colour": "#041d30",
+		"colour": "#61b235",
 		"description": ["A mod about hollow logs and hollow promises."],
 		"links": [
 			{
@@ -67,14 +83,14 @@
 			},
 			{
 				"name": "Github",
-				"to": "https://github.com/CallMeEchoCodes/Hollow"
+				"to": "https://github.com/SpiritGameStudios/Hollow"
 			}
 		]
 	},
 	{
 		"name": "modbar",
 		"icon": "https://raw.githubusercontent.com/worldwidepixel/modBar/main/img/icon256.png",
-		"colour": "#041d30",
+		"colour": "#ff049d",
 		"description": ["The easiest way to find your favourite Modrinth projects."],
 		"links": [
 			{
@@ -86,7 +102,7 @@
 	{
 		"name": "ModFest Sound Team",
 		"icon": "https://raw.githubusercontent.com/ModFest/art/refs/heads/v2/icon/512w/modfest/full.png",
-		"colour": "#041d30",
+		"colour": "#171d23",
 		"description": ["Helping create the music heard during ModFest events."],
 		"links": [
 			{
@@ -104,33 +120,9 @@
 		]
 	},
 	{
-		"name": "Name-ify",
-		"icon": "https://projects.worldwidepixel.ca/nameify512.png",
-		"colour": "#041d30",
-		"description": ["A simple Minecraft nickname formatting generator."],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://projects.worldwidepixel.ca/nameify"
-			}
-		]
-	},
-	{
-		"name": "Serv-ify",
-		"icon": "https://projects.worldwidepixel.ca/servify512.png",
-		"colour": "#041d30",
-		"description": ["Find Minecraft server info, relatively easily."],
-		"links": [
-			{
-				"name": "Website",
-				"to": "https://projects.worldwidepixel.ca/servify"
-			}
-		]
-	},
-	{
 		"name": "Snapper",
 		"icon": "https://raw.githubusercontent.com/SpiritGameStudios/.github/refs/heads/main/assets/snapper/snapper-512.png",
-		"colour": "#041d30",
+		"colour": "#7e82f5",
 		"description": ["Screenshots, made simple."],
 		"links": [
 			{
@@ -146,7 +138,7 @@
 	{
 		"name": "Spirit Studios",
 		"icon": "https://avatars.githubusercontent.com/u/175811374?s=200&v=4",
-		"colour": "#041d30",
+		"colour": "#8400ff",
 		"description": ["Redefining."],
 		"links": [
 			{
@@ -162,7 +154,7 @@
 	{
 		"name": "Unofficial Modrinth Status",
 		"icon": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpgwbdmj36f5obdc26puokqc/bafkreibeqin5m2vvecqj57eodqjfmj3r7mt4iloah4k6f7gvv24z5omtxu@jpeg",
-		"colour": "#041d30",
+		"colour": "#1bd86a",
 		"description": ["Unofficial automated uptime monitor account for Modrinth."],
 		"links": [
 			{
@@ -174,7 +166,7 @@
 	{
 		"name": "Unofficial Mojang Status",
 		"icon": "https://cdn.bsky.app/img/avatar/plain/did:plc:beli5qagbqkeguidoweb2s2r/bafkreie7hn5a55ldur7z5juci32ltsywyymp5cfz636y3srxnansiyfhvu@jpeg",
-		"colour": "#041d30",
+		"colour": "#f0323e",
 		"description": ["Unofficial automated uptime monitor account for Mojang Studios."],
 		"links": [
 			{

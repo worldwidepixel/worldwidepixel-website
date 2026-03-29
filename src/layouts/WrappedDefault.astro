@@ -1,12 +1,11 @@
 ---
+import PageWrapper from "../components/PageWrapper.astro";
 import Default from "./Default.astro";
 const { title } = Astro.props;
 ---
 
 <Default {title}>
-	<div class="flex w-full flex-row justify-center py-6">
-		<div class="w-full max-w-7xl px-6">
-			<slot />
-		</div>
-	</div>
+	<PageWrapper>
+		<slot />
+	</PageWrapper>
 </Default>

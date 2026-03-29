@@ -1,52 +1,94 @@
 ---
 import Button from "../components/Button.astro";
-import WrappedDefault from "../layouts/WrappedDefault.astro";
+import Default from "../layouts/Default.astro";
 import projects from "../data/projects.json";
+import Separator from "../components/ui/Separator.astro";
+import PageWrapper from "../components/PageWrapper.astro";
 
 function getGradientFromProject(colour: string) {
 	return `background: linear-gradient(135deg, ${colour} 0%, rgba(0,0,0,0) 100%);`;
 }
 ---
 
-<WrappedDefault title="projects">
-	<div class="flex flex-col gap-4 py-16 text-sm">
-		<h1>My current <span class="brand-gradient">projects</span>.</h1>
-		(and orgs)
-	</div>
-	<div class="flex flex-col justify-center gap-4">
-		{
-			projects.map((project: any) => (
-				<div class="flex w-full flex-col">
-					<div
-						class="flex w-full flex-col gap-3 rounded-3xl p-6"
-						style={getGradientFromProject(project.colour)}>
-						<h2 class="flex flex-row items-center gap-4">
-							<img class="h-10 w-10 rounded-xl bg-white p-0.5" src={project.icon} />
-							{project.name}
-						</h2>
-						<span class="flex flex-col gap-2">
-							{project.description.map((paragraph: any) => (
-								<span>{paragraph}</span>
-							))}
-						</span>
-						<div class="flex flex-row flex-wrap items-center gap-2">
-							{project.links.map((link: any) => (
-								<Button
-									classList={
-										project.colour === "#ffffff"
-											? "subtext_dark"
-											: "" + ` bg-brand-background-secondary`
-									}
-									to={link.to}
-									external={true}
-									showIcon={true}>
-									{link.name}
-								</Button>
-							))}
-						</div>
-					</div>
+<Default title="projects">
+	<div class="flex h-full w-full flex-col">
+		<div
+			class="rendering-pixelated bg-[url(/img/textures/ui/background/projects_background_tile.png)] bg-size-(--scale-xl) bg-center bg-repeat object-fill">
+			<PageWrapper>
+				<div class="flex flex-col gap-4 py-16 text-sm">
+					<h1>
+						My current <span
+							class="drop-shadow-dova-black-1 text-dova-black-5 drop-shadow-dova bg-brand-gradient w-fit"
+							>projects</span
+						>.
+					</h1>
+					<span class="bg-dova-blue-4 drop-shadow-dova-black-1 drop-shadow-dova w-fit px-2 py-1"
+						>(and orgs)</span
+					>
 				</div>
-			))
-		}
+			</PageWrapper>
+		</div>
+		<Separator />
+		<PageWrapper>
+			<div class="drop-shadow-dova mb-2 ml-2 border">
+				<div class="bg-dova-blue-4 grid grid-cols-2 items-center gap-4 p-2 sm:grid-cols-3">
+					<span
+						class="flex flex-row items-center font-bold select-none sm:col-start-2 sm:justify-center"
+						aria-hidden>projects.exe</span
+					>
+					<span class="flex flex-row items-center justify-end gap-3">
+						<span
+							class="bg-dova-green-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+						<span
+							class="bg-dova-yellow-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+						<span
+							class="bg-dova-red-1 button-shadow-dova drop-shadow-dova-black-2 size-6 cursor-pointer active:drop-shadow-none"
+						></span>
+
+						{/* lots of span-ception here, these are just for show*/}
+					</span>
+				</div>
+				<div class="border-x-dova-brand-alt flex w-full max-w-7xl flex-col justify-center border-x-8">
+					{
+						projects.map((project: any, iter: number) => (
+							<div style={`background-color: ${project.colour}40`}>
+								<span class="bg-dova-brand-alt flex h-2 w-full" />
+								<div class="flex w-full flex-row">
+									<img class="aspect-square size-48" src={project.icon} />
+									<div class="border-l-dova-brand-alt flex w-full flex-col border-l-8 p-4">
+										<div class="flex w-full flex-col gap-3 rounded-3xl">
+											<h2 class="flex flex-row items-center gap-4">{project.name}</h2>
+											<span class="flex flex-col gap-2">
+												{project.description.map((paragraph: any) => (
+													<span>{paragraph}</span>
+												))}
+											</span>
+											<div class="flex flex-row flex-wrap items-center gap-2">
+												{project.links.map((link: any) => (
+													<Button
+														classList={
+															project.colour === "#ffffff"
+																? "subtext_dark"
+																: "" + ` bg-brand-background-secondary`
+														}
+														to={link.to}
+														external={true}
+														showIcon={true}>
+														{link.name}
+													</Button>
+												))}
+											</div>
+										</div>
+									</div>
+								</div>
+								{projects.length - iter === 1 && <span class="bg-dova-brand-alt flex h-2 w-full" />}
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</PageWrapper>
 	</div>
-</WrappedDefault>
+</Default>
