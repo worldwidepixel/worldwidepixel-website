@@ -1,0 +1,12 @@
+---
+import WrappedDefault from "../layouts/WrappedDefault.astro";
+---
+
+<script is:inline>
+	const params = new URLSearchParams(window.location.search);
+	window.location.replace("https://lynndova.com");
+</script>
+
+<WrappedDefault title="music">
+	<span class="h-full"> Redirecting to lynndova.com... </span>
+</WrappedDefault>

@@ -101,7 +101,7 @@ layer(base);
 
 	.button-shadow-dova {
 		--minus-eight-pixels: -8px;
-		@apply drop-shadow-dova drop-shadow-dova-black-4 active:translate-x-(--minus-eight-pixels) active:translate-y-2 active:drop-shadow-none;
+		@apply drop-shadow-dova drop-shadow-dova-black-4 mb-2 ml-2 active:translate-x-(--minus-eight-pixels) active:translate-y-2 active:drop-shadow-none;
 	}
 
 	h1:not(.md h1) {

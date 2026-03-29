@@ -29,9 +29,6 @@ importers:
       astro-seo:
         specifier: ^1.1.0
         version: 1.1.0(prettier-plugin-astro@0.14.1)(prettier@3.8.1)(typescript@6.0.2)
-      colorthief:
-        specifier: ^3.3.1
-        version: 3.3.1(sharp@0.34.5)
       simple-icons-astro:
         specifier: ^16.1.0
         version: 16.1.0(astro@6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@6.0.2)(yaml@2.8.3))
@@ -874,15 +871,6 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
-
-  colorthief@3.3.1:
-    resolution: {integrity: sha512-a3qzYXy51h6p3725pV8rnJwUBGTtvYQge2pVhKJwL+vETUD5pCi6VKmQyu51pBHdUbu/BPEXbwFLS0GnxXNhGA==}
-    hasBin: true
-    peerDependencies:
-      sharp: '>=0.33.0'
-    peerDependenciesMeta:
-      sharp:
-        optional: true
 
   comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
@@ -2839,10 +2827,6 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
-
-  colorthief@3.3.1(sharp@0.34.5):
-    optionalDependencies:
-      sharp: 0.34.5
 
   comma-separated-tokens@2.0.3: {}
 

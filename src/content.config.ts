@@ -22,24 +22,6 @@ const blogPostsCollection = defineCollection({
 	}),
 });
 
-const musicCollection = defineCollection({
-	loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/music" }),
-	schema: z.object({
-		title: z.string(),
-		icon: z.string(),
-		date: z.coerce.date(),
-		summary: z.string(),
-		colour: z.string(),
-		links: z.array(
-			z.object({
-				name: z.string(),
-				to: z.string(),
-			}),
-		),
-	}),
-});
-
 export const collections = {
 	posts: blogPostsCollection,
-	music: musicCollection,
 };
