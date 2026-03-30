@@ -57,7 +57,7 @@ function getGradientFromProject(colour: string) {
 							<div style={`background-color: ${project.colour}40`}>
 								<span class="bg-dova-brand-alt flex h-2 w-full" />
 								<div class="flex w-full flex-row">
-									<img class="aspect-square size-48" src={project.icon} />
+									<img class="aspect-square size-50" src={project.icon} />
 									<div class="border-l-dova-brand-alt flex w-full flex-col border-l-8 p-4">
 										<div class="flex w-full flex-col gap-3 rounded-3xl">
 											<h2 class="flex flex-row items-center gap-4">{project.name}</h2>
@@ -68,15 +68,7 @@ function getGradientFromProject(colour: string) {
 											</span>
 											<div class="flex flex-row flex-wrap items-center gap-2">
 												{project.links.map((link: any) => (
-													<Button
-														classList={
-															project.colour === "#ffffff"
-																? "subtext_dark"
-																: "" + ` bg-brand-background-secondary`
-														}
-														to={link.to}
-														external={true}
-														showIcon={true}>
+													<Button to={link.to} external={true} showIcon={true}>
 														{link.name}
 													</Button>
 												))}

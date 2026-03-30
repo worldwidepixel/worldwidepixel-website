@@ -87,6 +87,14 @@ layer(base);
 	--scale-xl: 256px;
 }
 
+@layer utilities {
+	.rendering-pixelated {
+		image-rendering: pixelated;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: crisp-edges;
+	}
+}
+
 @layer components {
 	* {
 		@apply border-brand-border;
@@ -94,7 +102,7 @@ layer(base);
 	}
 
 	.button {
-		@apply bg-dova-brand rounded-xl px-4 py-3 text-lg font-bold transition active:scale-95;
+		@apply hover:border-brand-border-alt focus-visible:border-brand-border-alt border-8 font-bold outline-hidden select-none;
 	}
 
 	.button-circle {
@@ -191,11 +199,5 @@ layer(base);
 
 	.lucide {
 		@apply h-5 w-5;
-	}
-
-	.rendering-pixelated {
-		image-rendering: pixelated;
-		image-rendering: -moz-crisp-edges;
-		image-rendering: crisp-edges;
 	}
 }
